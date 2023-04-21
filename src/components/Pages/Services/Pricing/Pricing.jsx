@@ -22,7 +22,7 @@ const Pricing = () => {
 const PriceCard = ({ price }) => {
 
     return (
-        <div className='border p-8 tracking-wider'>
+        <div className='border hover:border-[#d8a62a] p-8 tracking-wider'>
             <div className='space-y-3'>
                 
             {price.popular?<span className='text-[10px] bg-[#d8a62a] p-1'

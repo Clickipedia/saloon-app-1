@@ -1,9 +1,12 @@
+import BannerSection from "./BannerSection/BannerSection";
+import ServiceSection from "./ServiceSection/ServiceSection";
 
 
 const Home = () => {
     return (
         <div>
-            <h1>Home</h1>
+            <BannerSection/>
+            <ServiceSection/>
         </div>
     );
 };

@@ -8,6 +8,8 @@ import { useState } from 'react';
 
 import {GrContactInfo} from 'react-icons/gr'
 
+import './Services.css';
+
 const Services = () => {
 
 
@@ -21,7 +23,7 @@ const Services = () => {
             <div className="py-20 text-center space-y-5 " >
                 <h1 className="text-5xl font-bold" >FACIAL MAKEUP TREATMENT</h1>
                 <p className="text-[#848493] w-[30%] mx-auto text-lg " >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ipsum dolor sit amet.</p>
-                <button className="text-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase" >Book Now!</button>
+                <button className="text-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase btn-effect" >Book Now!</button>
             </div>
 
             <div className='w-[40%] mx-auto'>

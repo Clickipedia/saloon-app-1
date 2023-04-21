@@ -39,7 +39,7 @@ const Reviews = () => {
                     <input className='bg-transparent px-10 py-6 border' type="text" placeholder='Email' />
                     <textarea className='col-span-2 bg-transparent px-10 py-6 border' name="" id="" cols="30" rows="10"></textarea>
                     <span></span>
-                    <input className=' hover:bg-[#d8a62a] hover:text-white text-[#d8a62a] px-10 py-6 border border-[#d8a62a]' type="submit" placeholder='Submit' />
+                    <input className='ms-auto w-[65%] cursor-pointer hover:bg-[#d8a62a] hover:text-white text-[#d8a62a] py-4 border border-[#d8a62a]' type="submit" placeholder='Submit' />
                     
 
                 </div>

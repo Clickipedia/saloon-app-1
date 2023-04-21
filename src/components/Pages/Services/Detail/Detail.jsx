@@ -1,39 +1,13 @@
 import React, { useState } from 'react';
 
 import commaIcon from '../../../../assets/all-images/comma-icon.png';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 
 
 const Detail = () => {
 
-    // const [faqs, setfaqs] = useState([
-    //     {
-    //         question: 'How many programmers does it take to screw in a lightbulb?',
-    //         answer: 'None. We don\'t address hardware issues.',
-    //         open: true
-    //     },
-    //     {
-    //         question: 'Who is the most awesome person?',
-    //         answer: 'You. The Viewer.',
-    //         open: false
-    //     },
-    //     {
-    //         question: 'How many questions does it take to make a successful FAQ Page?',
-    //         answer: 'This many.',
-    //         open: false
-    //     }
-    // ]);
 
-    // const toggleFAQ = index => {
-    //     setfaqs(faqs.map((faq, i) => {
-    //         if (i === index) {
-    //             faq.open = !faq.open
-    //         } else {
-    //             faq.open = false;
-    //         }
-
-    //         return faq;
-    //     }))
-    // }
 
 
     const servicesData = [
@@ -51,7 +25,25 @@ const Detail = () => {
         },
     ]
 
-
+    const responsive = {
+        superLargeDesktop: {
+            // the naming can be any, depends on you.
+            breakpoint: { max: 4000, min: 3000 },
+            items: 1
+        },
+        desktop: {
+            breakpoint: { max: 3000, min: 1024 },
+            items: 1
+        },
+        tablet: {
+            breakpoint: { max: 1024, min: 464 },
+            items: 1
+        },
+        mobile: {
+            breakpoint: { max: 464, min: 0 },
+            items: 1
+        }
+    };
 
     return (
         <div>
@@ -66,7 +58,7 @@ const Detail = () => {
                     <p>
                         Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.
                     </p>
-                    <button className="text-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase" >Book Now!</button>
+                    <button className="btn-effect text-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase" >Book Now!</button>
                 </div>
             </div>
 
@@ -97,45 +89,58 @@ const Detail = () => {
                         })
                     }
                 </div>
-                <div className='my-20 w-[40%] mx-auto space-y-5' >
-                    <img className='mx-auto' src={commaIcon} alt="" />
-                    <p className='text-lg italic text-center'>
-                        “Mina Service is awesome! Lorem ipsum dolor sit amet, consectetuer
-                        adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-                        magna aliquam erat volutpat”
-                    </p>
-                    <div className='flex items-center gap-5 w-[273px] mx-auto'>
-                        <div
-                        className='bg-slate-400 w-20 h-20 border-2 rounded-[50%]'
-                        ></div>
-                        <div>
-                            <h3 className='text-lg uppercase'>Cynthia Nelson</h3>
-                            <p className='text-sm text-[#848493]' >customer</p>
-                        </div>
-                    </div>
+                <div>
+                    <Carousel responsive={responsive}
+                    showDots
+                    arrows={false}
+                    customDot={<CustomDot/>}
+                    >
+                        <ClientFeedback/>
+                        <ClientFeedback/>
+                        <ClientFeedback/>
+                    </Carousel>
                 </div>
             </div>
         </div>
     );
 };
 
-
-const FAQ = ({ faq, index, toggleFAQ }) => {
+const ClientFeedback = () => {
 
     return (
-        <div
-            className={"faq " + (faq.open ? 'open' : '')}
-            key={index}
-            onClick={() => toggleFAQ(index)}
-        >
-            <div className="faq-question">
-                {faq.question}
-            </div>
-            <div className="faq-answer">
-                {faq.answer}
+        <div className='my-20 w-[40%] mx-auto space-y-5' >
+            <img className='mx-auto' src={commaIcon} alt="" />
+            <p className='text-lg italic text-center'>
+                “Mina Service is awesome! Lorem ipsum dolor sit amet, consectetuer
+                adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat volutpat”
+            </p>
+            <div className='flex items-center gap-5 w-[273px] mx-auto'>
+                <div
+                    className='bg-slate-400 w-20 h-20 border-2 rounded-[50%]'
+                ></div>
+                <div>
+                    <h3 className='text-lg uppercase'>Cynthia Nelson</h3>
+                    <p className='text-sm text-[#848493]' >customer</p>
+                </div>
             </div>
         </div>
     )
 }
+
+
+
+const CustomDot = ({ onMove, index, onClick, active }) => {
+    // onMove means if dragging or swiping in progress.
+    // active is provided by this lib for checking if the item is active or not.
+    return (
+        <li
+            className={`ms-2 2xl:mb-8 md:mb-4 mb-2 p-[2px] w-12 cursor-pointer ${active ? "active bg-[#d8a62a] " : "inactive bg-[#777776] "}`}
+            onClick={() => onClick()}
+        >
+
+        </li>
+    );
+};
 
 export default Detail;
