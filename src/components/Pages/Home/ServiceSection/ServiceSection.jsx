@@ -13,7 +13,7 @@ const ServiceSection = () => {
             <div className='space-y-2 text-[#848493] text-center mx-auto'>
                 <p className='text-lg'>Enjoy Our Services</p>
                 <h2 className='text-3xl uppercase'><span className='font-semibold'>How It</span> Works</h2>
-                <div className='mx-auto flex items-center gap-3 justify-center'>
+                <div className='py-6 mx-auto flex items-center gap-3 justify-center'>
                     <div className='bg-[#848493] w-32 h-[2px]' ></div>
                     <img src={flower} alt="" />
                     <div className='bg-[#848493] w-32 h-[2px]' ></div>
