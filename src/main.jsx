@@ -10,6 +10,7 @@ import Detail from './components/Pages/Services/Detail/Detail'
 import Pricing from './components/Pages/Services/Pricing/Pricing'
 import Photos from './components/Pages/Services/Photos/Photos'
 import Reviews from './components/Pages/Services/Reviews/Reviews'
+import About from './components/Pages/About/About'
 
 const router = createBrowserRouter([
   {
@@ -46,6 +47,10 @@ const router = createBrowserRouter([
           },
         ]
       },
+      {
+        path:'/about',
+        element:<About/>
+      }
     ]
   }
 ])

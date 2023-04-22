@@ -24,14 +24,14 @@ const Pricing = () => {
 const PriceCard = ({ price }) => {
 
     return (
-        <div className='border main-box p-8 tracking-wider'>
+        <div className='border-2 main-box p-8 tracking-wider'>
             <div className='space-y-3'>
-                
-            {price.popular?<span className='text-[10px] bg-[#d8a62a] p-1'
-                > Most Popular </span>:
-                <span className='p-1' ></span>
+
+                {price.popular ? <span className='text-[10px] bg-[#d8a62a] p-1'
+                > Most Popular </span> :
+                    <span className='p-1' ></span>
                 }
-                
+
 
                 <h1 className='text-xl uppercase' ><span className='font-bold block' >{price.title}</span>
                     PACKAGE
@@ -57,13 +57,28 @@ const PriceCard = ({ price }) => {
                 }
             </div>
 
-            <button
-                className='text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
+            <label
+                htmlFor="my-modal"
+                className='btn bg-transparent rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
             >Select
-            </button>
+            </label>
+            <input type="checkbox" id="my-modal" className="modal-toggle" />
+            <div className="modal text-black">
+                <div className="modal-box">
+                    <h3 className="font-bold text-lg">Hello User!</h3>
+                    <p className="py-4">Do you want to buy this package?</p>
+                    <div className="modal-action">
+                        <label htmlFor="my-modal" className="btn">Add to Cart</label>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }
+
+
+
+
 
 
 export default Pricing;

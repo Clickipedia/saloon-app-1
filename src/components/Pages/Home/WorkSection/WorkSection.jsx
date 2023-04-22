@@ -7,6 +7,31 @@ import foot from '../../../../assets/all-images/foot-icon.png';
 
 
 const WorkSection = () => {
+
+
+    const data = [
+        {
+            id:1,
+            title:'Discover',
+            desc:'Search for beauty services you need',
+            image:face
+        },
+        {
+            id:2,
+            title:'Book',
+            desc:'Choose your service and book an appointment directly',
+            image:hand
+        },
+        {
+            id:3,
+            title:'Enjoy',
+            desc:'Sit back and enjoy your unique beauty experience',
+            image:foot
+        },
+    ]
+
+
+
     return (
         <div className='bg-[#1f1f3f] py-10'>
             <div className='my-10  w-[60%] mx-auto'>
@@ -23,23 +48,9 @@ const WorkSection = () => {
 
                 <div className='grid grid-cols-3 mt-20' >
 
-                    <div className='text-center space-y-3'>
-                        <img className=' hover:scale-110 duration-200 mx-auto border-2 border-[#d8a62a] w-36 h-36 object-contain p-8 rounded-[50%]' src={face} alt="" />
-                        <h2 className='text-3xl text-[#bcbcc6]' >1. Discover</h2>
-                        <p className='text-[#a9a9b5] mx-auto w-60' >Search for beauty services you need</p>
-                    </div>
-
-                    <div className='text-center space-y-3'>
-                        <img className='mx-auto border-2 border-[#d8a62a] w-36 h-36 object-contain p-8 rounded-[50%]' src={hand} alt="" />
-                        <h2 className='text-3xl text-[#bcbcc6]' >2. Book</h2>
-                        <p className='text-[#a9a9b5] mx-auto w-60' >Choose your service and book an appointment directly</p>
-                    </div>
-
-                    <div className='text-center space-y-3'>
-                        <img className='mx-auto border-2 border-[#d8a62a] w-36 h-36 object-contain p-8 rounded-[50%]' src={foot} alt="" />
-                        <h2 className='text-3xl text-[#bcbcc6]' >3. Enjoy</h2>
-                        <p className='text-[#a9a9b5] mx-auto w-60' >Sit back and enjoy your unique beauty experience</p>
-                    </div>
+                {
+                    data.map((item, i)=><WorkCard key={i} item={item} ></WorkCard>)
+                }
 
                 </div>
 
@@ -47,5 +58,17 @@ const WorkSection = () => {
         </div>
     );
 };
+
+const WorkCard = ({item}) => {
+
+    return (
+        <div className='text-center space-y-3'>
+            <img className=' hover:scale-110 duration-200 mx-auto border-2 border-[#d8a62a] w-36 h-36 object-contain p-8 rounded-[50%]' src={item.image} alt="" />
+            <h2 className='text-3xl text-[#bcbcc6]' > {item.title} </h2>
+            <p className='text-[#a9a9b5] mx-auto w-60' > {item.desc} </p>
+        </div>
+    )
+
+}
 
 export default WorkSection;

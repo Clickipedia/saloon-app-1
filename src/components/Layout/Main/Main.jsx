@@ -10,9 +10,9 @@ const Main = () => {
     
     return (
         <div className='bg-[#1a1a38] text-white w-full' >
-            <div className='sticky bg-[#1a1a38] z-50 top-0'>
+            {/* <div className='sticky bg-[#1a1a38] z-50 top-0'> */}
                 <Header />
-            </div>
+            {/* </div> */}
             <Outlet />
             <Footer/>
         </div>

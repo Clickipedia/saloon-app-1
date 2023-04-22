@@ -87,7 +87,7 @@ const ServiceCard = ({ serviceData }) => {
                         })
                     }
                 </ul>
-                <button className='border border-[#d8a62a] text-[#d8a62a] hover:bg-[#d8a62a] hover:text-white px-14 py-3' >
+                <button className='border border-[#d8a62a] text-[#d8a62a] hover:bg-[#d8a62a] hover:text-white px-14 py-3 uppercase' >
                     Learn More
                 </button>
             </div>

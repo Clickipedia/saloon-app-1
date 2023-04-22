@@ -13,10 +13,13 @@ const Header = () => {
                 </div>
 
                 <div className='flex gap-10 items-center'>
-                    <Link to='/services' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    <Link to='/' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    HOME
+                    </Link>
+                    <Link to='/services/detail' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                     SERVICES
                     </Link>
-                    <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    <Link to='/about' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                     ABOUT
                     </Link>
                     <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
