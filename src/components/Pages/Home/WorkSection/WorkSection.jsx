@@ -6,7 +6,7 @@ import hand from '../../../../assets/all-images/hand-icon.png';
 import foot from '../../../../assets/all-images/foot-icon.png';
 
 
-const ServiceSection = () => {
+const WorkSection = () => {
     return (
         <div className='my-10 w-[60%] mx-auto'>
 
@@ -46,4 +46,4 @@ const ServiceSection = () => {
     );
 };
 
-export default ServiceSection;
+export default WorkSection;

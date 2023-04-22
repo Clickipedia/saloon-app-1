@@ -60,7 +60,7 @@ const BannerCarousel = () => {
                     <span className='text-[#d8a62a] '>Beauty services</span> <br />
                     Anywhere, anytime
                 </h1>
-                <button className='py-5 px-16 border-2'>
+                <button className='py-5 px-16 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white'>
                     BOOK A SERVICE NOW!
                 </button>
             </div>

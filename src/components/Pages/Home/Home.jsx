@@ -5,8 +5,11 @@ import LearnmoreSection from "./LearnmoreSection/LearnmoreSection";
 import MakeupArtistSection from "./MakeupArtistSection/MakeupArtistSection";
 import NewsSection from "./NewsSection/NewsSection";
 import PackageSection from "./PackageSection/PackageSection";
-import ServiceSection from "./ServiceSection/ServiceSection";
+import WorkSection from "./WorkSection/WorkSection";
+import SubscribeSection from "./SubscribeSection/SubscribeSection";
 
+import './Home.css'
+import ServicesSection from "./ServicesSection/ServicesSection";
 
 const Home = () => {
 
@@ -15,13 +18,15 @@ const Home = () => {
     return (
         <div>
             <BannerSection/>
-            <ServiceSection/>
+            <ServicesSection/>
+            <WorkSection/>
             <PackageSection/>
             <LearnmoreSection/>
             <MakeupArtistSection/>
             <AchievementSection/>
             <FeedbackSection/>
             <NewsSection/>
+            <SubscribeSection/>
         </div>
     );
 };

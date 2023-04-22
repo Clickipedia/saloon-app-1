@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom';
 import Footer from '../Footer/Footer';
 // import Header2 from '../Header/Header2';
 
+import './Main.css'
+
 const Main = () => {
     
     return (
