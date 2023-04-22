@@ -4,6 +4,8 @@ import { data } from './pakages'
 import { TiTick } from 'react-icons/ti';
 import { AiOutlineClose } from 'react-icons/ai'
 
+import './Pricing.css'
+
 const Pricing = () => {
 
 
@@ -22,7 +24,7 @@ const Pricing = () => {
 const PriceCard = ({ price }) => {
 
     return (
-        <div className='border hover:border-[#d8a62a] p-8 tracking-wider'>
+        <div className='border main-box p-8 tracking-wider'>
             <div className='space-y-3'>
                 
             {price.popular?<span className='text-[10px] bg-[#d8a62a] p-1'
@@ -56,7 +58,7 @@ const PriceCard = ({ price }) => {
             </div>
 
             <button
-                className='text-[#d8a62a] hover:bg-[#d8a62a] hover:text-white border border-[#d8a62a] py-2 w-full'
+                className='text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
             >Select
             </button>
         </div>

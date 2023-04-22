@@ -13,6 +13,9 @@ import './Services.css';
 const Services = () => {
 
 
+    window.scrollTo(0, 0)
+
+
     const [actiiveLink, setActiveLink] = useState(false)
 
 

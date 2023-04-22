@@ -1,0 +1,8 @@
+.main-box:hover{
+    border-color: #d8a62a;
+}
+
+.main-box:hover button{
+    background-color: #d8a62a;
+    color: white;
+}
