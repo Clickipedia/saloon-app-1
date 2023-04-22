@@ -48,7 +48,7 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid grid-cols-2 w-full h-[75vh] items-center ps-[8rem]'
+            className='grid grid-cols-2 w-full h-[75vh] items-center ps-[8rem] bg-[#0e0c2e]'
             style={{
                 backgroundImage: ``
             }}
