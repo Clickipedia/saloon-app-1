@@ -32,7 +32,7 @@ const BannerSection = () => {
                 showDots
                 customDot={<CustomDot/>}
                 dotListClass='p-10  ms-auto h-10 w-32'
-              
+              infinite
             >
                 <BannerCarousel />
                 <BannerCarousel />

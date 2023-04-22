@@ -8,7 +8,7 @@ const LearnmoreSection = () => {
                     <span className='font-bold' >EVERYTHING HAS</span> BEAUTY
                     <span className='font-bold' > MAKE UP IS</span> ART
                 </h1>
-                <p className='ps-20'>
+                <p className='ps-20 text-[#908f8f]'>
                     Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum.
                 </p>
                 <button className='border border-[#d8a62a] hover:bg-[#d8a62a] hover:text-white text-[#d8a62a] px-16 py-4'>

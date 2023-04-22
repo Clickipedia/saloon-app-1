@@ -1,5 +1,6 @@
 import AchievementSection from "./AchievementSection/AchievementSection";
 import BannerSection from "./BannerSection/BannerSection";
+import FeedbackSection from "./FeedbackSection/FeedbackSection";
 import LearnmoreSection from "./LearnmoreSection/LearnmoreSection";
 import MakeupArtistSection from "./MakeupArtistSection/MakeupArtistSection";
 import PackageSection from "./PackageSection/PackageSection";
@@ -15,6 +16,7 @@ const Home = () => {
             <LearnmoreSection/>
             <MakeupArtistSection/>
             <AchievementSection/>
+            <FeedbackSection/>
         </div>
     );
 };
