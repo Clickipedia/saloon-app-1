@@ -9,7 +9,7 @@ const PackageSection = () => {
         <div className='my-20'>
             <div className='w-[50%] space-y-2 text-[#848493] text-center mx-auto'>
                 <p className='text-lg'>Choose Our Makeup Offer</p>
-                <h2 className='text-3xl uppercase'><span className='font-semibold'>SPECIAL PRICE</span> PACKAGE</h2>
+                <h2 className='text-3xl uppercase'><span className='font-semibold text-[#ceced1]'>SPECIAL PRICE</span> PACKAGE</h2>
                 <div className='py-6 mx-auto flex items-center gap-3 justify-center'>
                     <div className='bg-[#848493] w-32 h-[2px]' ></div>
                     <img src={flower} alt="" />

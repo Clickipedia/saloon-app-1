@@ -1,20 +1,22 @@
 .main-box{
     
     transition: all .2s linear;
-    transition-duration: 1000;
 }
 /* 
 .upper-box{
-
+    
 } */
 
 .down-box{
     visibility: hidden;
 }
 
-.main-box:hover .down-box{
+.upper-box:hover + .down-box{
+    transition: all .2s linear;
     visibility: visible;
+    transition-duration: 1000;
 }
-.main-box:hover .upper-box{
+.upper-box:hover{
+    transition: all .15s linear;
     background-color: #d8a62a;
 }
