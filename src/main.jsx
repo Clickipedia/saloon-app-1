@@ -11,11 +11,14 @@ import Pricing from './components/Pages/Services/Pricing/Pricing'
 import Photos from './components/Pages/Services/Photos/Photos'
 import Reviews from './components/Pages/Services/Reviews/Reviews'
 import About from './components/Pages/About/About'
+import ContactUs from './components/Pages/ContactUs/ContactUs'
+import ErrorPage from './components/Layout/ErrorPage/ErrorPage'
 
 const router = createBrowserRouter([
   {
     path:'/',
     element:<Main/>,
+    errorElement:<ErrorPage/>,
     children:[
       {
         path:'/',
@@ -50,7 +53,11 @@ const router = createBrowserRouter([
       {
         path:'/about',
         element:<About/>
-      }
+      },
+      {
+        path:'/contact',
+        element:<ContactUs/>
+      },
     ]
   }
 ])

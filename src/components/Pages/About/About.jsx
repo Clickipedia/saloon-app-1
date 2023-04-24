@@ -1,7 +1,8 @@
 import React from 'react';
 
-
+import Feedback from '../Services/Detail/Feedback';
 import './About.css'
+import MakeupArtistSection from '../Home/MakeupArtistSection/MakeupArtistSection';
 
 
 const About = () => {
@@ -46,6 +47,19 @@ const About = () => {
                 </p>
 
             </div>
+
+            <div>
+                <MakeupArtistSection/>
+            </div>
+            <div className='py-10 text-center bg-[#d8a62a]'>
+                <button className='uppercase btn bg-transparent rounded-none border-white border-2' >
+                    contact us today!
+                </button>
+            </div>
+            <div>
+                <Feedback/>
+            </div>
+
         </div>
     );
 };

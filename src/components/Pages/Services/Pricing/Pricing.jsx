@@ -3,6 +3,7 @@ import { data } from './pakages'
 
 import { TiTick } from 'react-icons/ti';
 import { AiOutlineClose } from 'react-icons/ai'
+import { RxCross1 } from 'react-icons/rx'
 
 import './Pricing.css'
 
@@ -59,7 +60,7 @@ const PriceCard = ({ price }) => {
 
             <label
                 htmlFor="my-modal"
-                className='btn bg-transparent rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
+                className='btn bg-transparent hover:bg-transparent hover:border-white hover:text-white rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
             >Select
             </label>
             <input type="checkbox" id="my-modal" className="modal-toggle" />
@@ -67,7 +68,8 @@ const PriceCard = ({ price }) => {
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Hello User!</h3>
                     <p className="py-4">Do you want to buy this package?</p>
-                    <div className="modal-action">
+                    <div className="modal-action ">
+                        <label htmlFor="my-modal" title='Cancel' className="cursor-pointer absolute top-3 right-3 text-red-600 hover:text-red-800 text-xl  "><RxCross1/></label>
                         <label htmlFor="my-modal" className="btn">Add to Cart</label>
                     </div>
                 </div>
