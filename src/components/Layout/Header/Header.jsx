@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
 import { CgProfile } from 'react-icons/cg';
 import Cart from './Cart/Cart';
+import SearchBar from './SearchBar/SearchBar';
 
 const Header = () => {
     return (
@@ -39,14 +40,17 @@ const Header = () => {
                         </label>
                     </button>
                     <button className='duration-150 hover:text-[#d8a62a] text-2xl'>
-                        <AiOutlineSearch />
+                        <label htmlFor="my-modal-3" className="cursor-pointer">
+                            <AiOutlineSearch />
+                        </label>
                     </button>
-                    <button className='duration-150 hover:text-[#d8a62a] text-2xl'>
+                    <Link to='/login' className='duration-150 hover:text-[#d8a62a] text-2xl'>
                         <CgProfile />
-                    </button>
+                    </Link>
                 </div>
             </nav>
-            <Cart/>
+            <Cart />
+            <SearchBar/>
         </div>
     );
 };

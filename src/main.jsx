@@ -14,6 +14,7 @@ import About from './components/Pages/About/About'
 import ContactUs from './components/Pages/ContactUs/ContactUs'
 import ErrorPage from './components/Layout/ErrorPage/ErrorPage'
 import MyBooking from './components/Pages/MyBooking/MyBooking'
+import LoginPage from './components/Pages/LoginPage/LoginPage'
 
 const router = createBrowserRouter([
   {
@@ -62,6 +63,10 @@ const router = createBrowserRouter([
       {
         path:'/my-booking',
         element:<MyBooking/>
+      },
+      {
+        path:'/login',
+        element:<LoginPage/>
       },
     ]
   }
