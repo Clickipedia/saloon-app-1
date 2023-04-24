@@ -26,7 +26,7 @@ const Header = () => {
                     <Link to='/contact' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         CONTACT US
                     </Link>
-                    <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    <Link to='/my-booking' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         MY BOOKING
                     </Link>
                     <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
@@ -34,7 +34,7 @@ const Header = () => {
                     </Link>
                     <button className='duration-150 hover:text-[#d8a62a] text-2xl'>
 
-                        <label htmlFor="my-modal-6" className="">
+                        <label htmlFor="my-modal-6" className="cursor-pointer">
                             <AiOutlineShoppingCart />
                         </label>
                     </button>

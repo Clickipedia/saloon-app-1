@@ -13,6 +13,7 @@ import Reviews from './components/Pages/Services/Reviews/Reviews'
 import About from './components/Pages/About/About'
 import ContactUs from './components/Pages/ContactUs/ContactUs'
 import ErrorPage from './components/Layout/ErrorPage/ErrorPage'
+import MyBooking from './components/Pages/MyBooking/MyBooking'
 
 const router = createBrowserRouter([
   {
@@ -57,6 +58,10 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element:<ContactUs/>
+      },
+      {
+        path:'/my-booking',
+        element:<MyBooking/>
       },
     ]
   }
