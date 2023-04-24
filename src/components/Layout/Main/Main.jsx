@@ -5,17 +5,31 @@ import Footer from '../Footer/Footer';
 // import Header2 from '../Header/Header2';
 
 import './Main.css'
+import { createContext, useState } from 'react';
+
+export const CartTooogle = createContext('cart value!!!');
 
 const Main = () => {
-    
+
+    document.head.title='nei'
+
+    const [cartValue, setCartValue] = useState(0)
+
+    // const handleCart = () => {
+    //     console.log('ok');
+    //     console.log(cartValue);
+    // }
+
     return (
-        <div className='bg-[#1a1a38] text-white w-full' >
-            {/* <div className='sticky bg-[#1a1a38] z-50 top-0'> */}
-                <Header />
-            {/* </div> */}
-            <Outlet />
-            <Footer/>
-        </div>
+        <CartTooogle.Provider value={[cartValue, setCartValue]} >
+            <div className='bg-[#1a1a38] text-white w-full' >
+                {/* <div className='sticky bg-[#1a1a38] z-50 top-0'> */}
+                <Header/>
+                {/* </div> */}
+                <Outlet />
+                <Footer />
+            </div>
+        </CartTooogle.Provider>
     );
 };
 

@@ -78,9 +78,10 @@ const ServiceCard = ({ serviceData }) => {
                 </p>
                 <ul className='space-y-3 pt-2'>
                     {
-                        [...Array(4)].map(() => {
+                        [...Array(4)].map((v,i) => {
+                            // console.log(i);
                             return (
-                                <li className='flex gap-5'>
+                                <li key={i} className='flex gap-5'>
                                     <img src={flower2} alt="" /> Lightens acne scars and spots caused by Sun Damage
                                 </li>
                             )

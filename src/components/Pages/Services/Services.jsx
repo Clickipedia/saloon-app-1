@@ -6,7 +6,7 @@ import reviewIcon from '../../../assets/all-images/Star-icon.png'
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import { useState } from 'react';
 
-import {GrContactInfo} from 'react-icons/gr'
+import {GrContactInfo} from 'react-icons/gr';
 
 import './Services.css';
 
@@ -37,7 +37,7 @@ const Services = () => {
                         `text-white `:` text-[#5a5a6f]`} >
 
                             <button className='hover:border-2 w-40 h-40 rounded-xl text-center uppercase font-medium space-y-3' >
-                                <img className='mx-auto w-20 h-20 object-contain p-5 rounded-[50%] border-4' src={detailIcon} alt="" />
+                                <img className='mx-auto w-20 h-20 object-contain p-5 rounded-[50%] border-4 tbg-white' src={detailIcon} alt="" />
                                 <p>Detail</p>
                             </button>
 

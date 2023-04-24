@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Cart = () => {
+const Cart = ({value}) => {
     return (
         <div className=''>
            <div className='text-black'>
@@ -8,7 +8,10 @@ const Cart = () => {
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Booking Cart</h3>
-                    <p className="py-4">No Package Added</p>
+                    {
+                        value?<p className="py-4">1 Package Added</p>
+                        : <p className="py-4">No Package Added</p>
+                    }
                     <div className="modal-action">
                         <label htmlFor="my-modal-6" className="btn">Cancel</label>
                     </div>

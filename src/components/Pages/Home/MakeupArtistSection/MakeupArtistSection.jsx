@@ -23,9 +23,10 @@ const MakeupArtistSection = () => {
 
 
                 {
-                    [...Array(4)].map(i => {
+                    [...Array(4)].map((v,i) => {
+                        // console.log(i);
                         return (
-                            <div className='w-[20rem] main-box'>
+                            <div key={i} className='w-[20rem] main-box'>
                                 <div className='mx-auto upper-box h-[20rem] bg-slate-300'>
                                     {/* <img src="" alt="" /> */}
                                 </div>

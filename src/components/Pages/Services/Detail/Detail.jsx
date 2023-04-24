@@ -26,25 +26,6 @@ const Detail = () => {
         },
     ]
 
-    // const responsive = {
-    //     superLargeDesktop: {
-    //         // the naming can be any, depends on you.
-    //         breakpoint: { max: 4000, min: 3000 },
-    //         items: 1
-    //     },
-    //     desktop: {
-    //         breakpoint: { max: 3000, min: 1024 },
-    //         items: 1
-    //     },
-    //     tablet: {
-    //         breakpoint: { max: 1024, min: 464 },
-    //         items: 1
-    //     },
-    //     mobile: {
-    //         breakpoint: { max: 464, min: 0 },
-    //         items: 1
-    //     }
-    // };
 
     return (
         <div>
@@ -63,11 +44,9 @@ const Detail = () => {
                 </div>
             </div>
 
-            {/* <div>
-                {faqs.map((faq, i) => (
-                    <FAQ faq={faq} index={i} toggleFAQ={toggleFAQ} />
-                ))}
-            </div> */}
+            <div>
+                <h1><span>FREQUENT ASK</span> QUESTIONS</h1>
+            </div>
 
             <div className='my-10 w-full'>
                 <h1 className='text-4xl text-center font-light'><span className='font-semibold'>Enjoy Our</span> Other Services</h1>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { data } from './pakages'
 
 import { TiTick } from 'react-icons/ti';
@@ -6,6 +6,7 @@ import { AiOutlineClose } from 'react-icons/ai'
 import { RxCross1 } from 'react-icons/rx'
 
 import './Pricing.css'
+import { CartTooogle } from '../../../Layout/Main/Main';
 
 const Pricing = () => {
 
@@ -23,6 +24,9 @@ const Pricing = () => {
 
 
 const PriceCard = ({ price }) => {
+
+    const handleCart = useContext(CartTooogle);
+    const [cartValue , setCartValue] = handleCart
 
     return (
         <div className='border-2 main-box p-8 tracking-wider'>
@@ -45,9 +49,9 @@ const PriceCard = ({ price }) => {
 
             <div className='py-5 space-y-2'>
                 {
-                    (price.features).map(item => {
+                    (price.features).map((item, i) => {
                         return (
-                            <p className='text-sm' >
+                            <p key={i} className='text-sm' >
                                 {
                                     item.status ? <TiTick className='inline text-[#d8a62a] me-2' /> : <AiOutlineClose className='inline me-2 text-[#848493]' />
                                 }
@@ -69,8 +73,10 @@ const PriceCard = ({ price }) => {
                     <h3 className="font-bold text-lg">Hello User!</h3>
                     <p className="py-4">Do you want to buy this package?</p>
                     <div className="modal-action ">
-                        <label htmlFor="my-modal" title='Cancel' className="cursor-pointer absolute top-3 right-3 text-red-600 hover:text-red-800 text-xl  "><RxCross1/></label>
-                        <label htmlFor="my-modal" className="btn">Add to Cart</label>
+                        <label htmlFor="my-modal" title='Cancel' className="cursor-pointer absolute top-3 right-3 text-red-600 hover:text-red-800 text-xl  "><RxCross1 /></label>
+                        <label htmlFor="my-modal" className="btn"
+                        onClick={() => setCartValue(1) }
+                        >Add to Cart</label>
                     </div>
                 </div>
             </div>
