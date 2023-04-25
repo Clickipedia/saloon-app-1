@@ -20,6 +20,7 @@ import SignUp from './components/Pages/LoginPage/SignUp'
 import BillInfo from './components/Pages/BillInfo/BillInfo'
 import FAQ from './components/Pages/FAQ/FAQ'
 import Blog from './components/Pages/Blog/Blog'
+import Gallery from './components/Pages/Gallery/Gallery'
 
 const router = createBrowserRouter([
   {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path:'/contact',
         element:<ContactUs/>
+      },
+      {
+        path:'/gallery',
+        element:<Gallery/>
       },
       {
         path:'/my-booking',

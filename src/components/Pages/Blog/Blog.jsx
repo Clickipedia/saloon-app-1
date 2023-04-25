@@ -7,8 +7,8 @@ const Blog = () => {
     return (
         <div className='bg-white text-black pb-20' >
 
-            <div className='space-y-2 text-[#848493] text-center mx-auto py-20'>
-                <h2 className='text-3xl uppercase'><span className='font-semibold text-[#ceced1]'>OUR LATEST </span> NEWS</h2>
+            <div className='space-y-2 text-[#6e6e6e] text-center mx-auto py-20'>
+                <h2 className='text-3xl uppercase'><span className='font-semibold text-[#464646]'>OUR LATEST </span> NEWS</h2>
                 <div className='py-6 mx-auto flex items-center gap-3 justify-center'>
                     <div className='bg-[#848493] w-32 h-[2px]' ></div>
                     <img src={flower} alt="" />

@@ -55,7 +55,7 @@ const BannerCarousel = () => {
         >
             <div className=''></div>
             <div className='space-y-8'>
-                <h4 className='text-4xl'>Find and Book</h4>
+                <h4 className='text-4xl font-extralight'>Find and Book</h4>
                 <h1 className='text-6xl uppercase' >
                     <span className='text-[#d8a62a] '>Beauty services</span> <br />
                     Anywhere, anytime

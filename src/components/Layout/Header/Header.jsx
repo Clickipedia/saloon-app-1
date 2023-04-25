@@ -13,8 +13,6 @@ const Header = () => {
     const [cartValue, setCartValue] = useContext(CartTooogle);
 
     
-
-
     return (
         <div className='py-8 px-32'>
             <nav className='flex justify-between items-center'>
@@ -35,11 +33,16 @@ const Header = () => {
                     <Link to='/contact' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         CONTACT US
                     </Link>
-                    <Link to='/my-booking' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    {/* <Link to='/my-booking' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         MY BOOKING
-                    </Link>
-                    <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                    </Link> */}
+
+                    {/* <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         OFFER!
+                    </Link> */}
+
+                    <Link to='/gallery' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                        GALLERY
                     </Link>
                     
                     {/* <button className=' indicator duration-150 hover:text-[#d8a62a] text-2xl'>

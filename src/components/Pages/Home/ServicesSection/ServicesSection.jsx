@@ -72,7 +72,7 @@ const ServiceCard = ({ serviceData }) => {
 
             </div>
             <div className='p-5 space-y-5'>
-                <h1 className='text-xl font-bold'>{serviceData}</h1>
+                <h1 className='text-xl font-bold uppercase'>{serviceData}</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
                 </p>

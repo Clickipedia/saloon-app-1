@@ -46,7 +46,7 @@ const FeedbackSection = () => {
                 <Carousel responsive={responsive}
                 autoPlay
                 arrows={false}
-                autoPlaySpeed={10000}
+                autoPlaySpeed={5000}
                 // additionalTransfrom={3000}
                 infinite
                 // rewind
@@ -54,7 +54,7 @@ const FeedbackSection = () => {
                 // pauseOnHover
                 // keyBoardControl={true}
                 
-                customTransition="all 20s linear 0s"
+                customTransition="all 30s linear 0s"
                 // transitionDuration={10000}
                 
                 >

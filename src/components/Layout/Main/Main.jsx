@@ -6,6 +6,7 @@ import Footer from '../Footer/Footer';
 
 import './Main.css'
 import { createContext, useState } from 'react';
+import Header2 from '../Header/Header2';
 
 export const CartTooogle = createContext('cart value!!!');
 
@@ -25,6 +26,7 @@ const Main = () => {
             <div className='bg-[#1a1a38] text-white w-full' >
                 {/* <div className='sticky bg-[#1a1a38] z-50 top-0'> */}
                 <Header/>
+                {/* <Header2/> */}
                 {/* </div> */}
                 <Outlet />
                 <Footer />
