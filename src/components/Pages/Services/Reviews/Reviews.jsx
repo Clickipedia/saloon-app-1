@@ -1,9 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import StarRatings from 'react-star-ratings';
 
 import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
 import { reviews } from './clientReviews';
 
 const Reviews = () => {
+
+    const [rating, setRating] = useState();
+
     return (
         <div className='w-[60%] mx-auto'>
             <div className='flex gap-4 flex-col items-center'>
@@ -25,13 +30,21 @@ const Reviews = () => {
 
             <div className='my-16'>
                 <div className='flex items-center gap-5'>
-                    <h1 className='text-xl font-semibold' >YOUR RATE</h1>
+                    <h1 className='text-xl font-semibold mt-2' >YOUR RATE</h1>
                     <div className='flex text-3xl text-[#d8a62a]'>
-                        <AiOutlineStar />
-                        <AiOutlineStar />
-                        <AiOutlineStar />
-                        <AiOutlineStar />
-                        <AiOutlineStar />
+                        <StarRatings
+                            rating={rating}
+                            starRatedColor="#d8a62a"
+                            changeRating={setRating}
+                            numberOfStars={5}
+                            starHoverColor='#d8a62a'
+                            // gradientPathName='sad'
+                            // starEmptyColor='transparent'
+                            // svgIconPath={<AiOutlineStar/>}
+                            // svgIconViewBox={<AiOutlineStar/>}
+                            name='rating'
+                            starDimension='25'
+                        />
                     </div>
                 </div>
                 <div className='my-10 grid grid-cols-2 gap-10'>
@@ -40,7 +53,7 @@ const Reviews = () => {
                     <textarea className='col-span-2 bg-transparent px-10 py-6 border' name="" id="" cols="30" rows="10"></textarea>
                     <span></span>
                     <input className='ms-auto w-[65%] cursor-pointer hover:bg-[#d8a62a] hover:text-white text-[#d8a62a] py-4 border border-[#d8a62a]' type="submit" placeholder='Submit' />
-                    
+
 
                 </div>
             </div>
