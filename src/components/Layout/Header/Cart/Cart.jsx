@@ -45,7 +45,7 @@ const Cart = ({value}) => {
                         </div>
                     }
                     <div className="modal-action">
-                        <label htmlFor="my-modal-6" className="btn rounded-none border-2 border-[#d8a62a] bg-transparent text-[#d8a62a]">View cart</label>
+                        <label htmlFor="my-modal-6" className="btn rounded-none border-2 border-[#d8a62a] bg-transparent text-[#d8a62a]">Close</label>
 
                         <label htmlFor="my-modal-6" onClick={handleCheckout} className="btn rounded-none border-none bg-[#d8a62a] text-white" >proccess checkout</label>
                         
