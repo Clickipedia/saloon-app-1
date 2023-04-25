@@ -22,21 +22,21 @@ const AchievementSection = () => {
 
                     <div>
                         <h4 className='text-4xl font-bold text-[#d8a62a]' >
-                             {counterOn && <CountUp start={0} end={3250} duration={2} delay={0} />}+
+                             {counterOn && <CountUp start={0} end={3250} duration={1.2} delay={0} />}+
                         </h4>
                         <h1 className='font-semibold' >Happy Customers</h1>
                     </div>
 
                     <div>
                         <h4 className='text-4xl font-bold text-[#d8a62a]' >
-                        {counterOn && <CountUp start={0} end={2930} duration={2} delay={0} /> }+
+                        {counterOn && <CountUp start={0} end={2930} duration={1.2} delay={0} /> }+
                         </h4>
                         <h1 className='font-semibold' >Passionate Makeup Artist</h1>
                     </div>
 
                     <div>
                         <h4 className='text-4xl font-bold text-[#d8a62a]' >
-                        {counterOn && <CountUp start={0} end={2300} duration={2} delay={0} />}+
+                        {counterOn && <CountUp start={0} end={2300} duration={1.2} delay={0} />}+
                         </h4>
                         <h1 className='font-semibold' >Clinic Arround The World</h1>
                     </div>

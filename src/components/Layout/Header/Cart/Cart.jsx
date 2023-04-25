@@ -1,7 +1,20 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate, useNavigation } from 'react-router-dom';
 
 const Cart = ({value}) => {
+
+    const navigation = useNavigation();
+    const navigate = useNavigate();
+
+
+    const handleCheckout = ()=>{
+        // navigation.location.pathname
+        // alert('ok');
+        navigate('/billing-info')
+        // navigation('/')
+    }
+
+
     return (
         <div className=''>
            <div className='text-black'>
@@ -34,7 +47,7 @@ const Cart = ({value}) => {
                     <div className="modal-action">
                         <label htmlFor="my-modal-6" className="btn rounded-none border-2 border-[#d8a62a] bg-transparent text-[#d8a62a]">View cart</label>
 
-                        <Link to='/billing-info' className="btn rounded-none border-none bg-[#d8a62a] text-white" >proccess checkout</Link>
+                        <label htmlFor="my-modal-6" onClick={handleCheckout} className="btn rounded-none border-none bg-[#d8a62a] text-white" >proccess checkout</label>
                         
                     </div>
                 </div>

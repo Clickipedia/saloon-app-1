@@ -17,6 +17,7 @@ import MyBooking from './components/Pages/MyBooking/MyBooking'
 import LoginPage from './components/Pages/LoginPage/LoginPage'
 import SignIn from './components/Pages/LoginPage/SignIn'
 import SignUp from './components/Pages/LoginPage/SignUp'
+import BillInfo from './components/Pages/BillInfo/BillInfo'
 
 const router = createBrowserRouter([
   {
@@ -68,7 +69,7 @@ const router = createBrowserRouter([
       },
       {
         path:'/billing-info',
-        element:<MyBooking/>
+        element:<BillInfo/>
       },
       {
         path:'/login',
