@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Feedback from './Feedback';
+import { FAQcard } from '../../FAQ/FAQ';
 
 // import commaIcon from '../../../../assets/all-images/comma-icon.png';
 // import Carousel from 'react-multi-carousel';
@@ -45,7 +46,15 @@ const Detail = () => {
             </div>
 
             <div>
-                <h1><span>FREQUENT ASK</span> QUESTIONS</h1>
+
+                <div className='text-center mt-20 py-10 text-3xl font-bold'>
+                    <h1>FREQUENT ASK QUESTION</h1>
+                </div>
+                <div className='w-1/2 mx-auto mb-20 space-y-3'>
+                    {
+                        [...Array(5)].map((v, i) => <FAQcard key={i} num={i+1} />)
+                    }
+                </div>
             </div>
 
             <div className='my-10 w-full'>
@@ -79,7 +88,7 @@ const Detail = () => {
                         <ClientFeedback/>
                         <ClientFeedback/>
                     </Carousel> */}
-                    <Feedback/>
+                    <Feedback />
                 </div>
             </div>
         </div>

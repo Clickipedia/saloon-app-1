@@ -64,7 +64,7 @@ const PriceCard = ({ price }) => {
 
             <label
                 htmlFor="my-modal"
-                className='btn bg-transparent hover:bg-transparent hover:border-white hover:text-white rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
+                className='btn bg-transparent hover:bg-[#d8a62a] hover:text-white rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
             >Select
             </label>
             <input type="checkbox" id="my-modal" className="modal-toggle" />

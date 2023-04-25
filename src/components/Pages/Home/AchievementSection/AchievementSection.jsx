@@ -10,7 +10,13 @@ const AchievementSection = () => {
 
     return (
         <ScrollTrigger onEnter={()=>setCounterOn(true)} onExit={()=>setCounterOn(false)} >
-        <div className='bg-white ps-40 text-black flex items-center h-[55vh]' >
+        <div className='bg-cover bg-no-repeat ps-40 text-black flex items-center h-[55vh]'
+        
+        style={{
+            backgroundImage:`url(https://img.freepik.com/free-vector/asian-beauty-banners-design_23-2148739797.jpg?w=1380&t=st=1682409891~exp=1682410491~hmac=0ca45a91d3cb171e536f7b4b6f9235c6cab69df8306411e546d94fa5e077f950)`
+        }}
+
+        >
             <div className='w-[45%] space-y-8'>
                 <div className='h-[110px] w-[210px] border-b-2 border-[#d8a62a]'>
                     <img className='h-full object-contain' src={logo} alt="" />

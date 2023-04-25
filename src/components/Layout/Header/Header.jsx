@@ -39,31 +39,29 @@ const Header = () => {
                         MY BOOKING
                     </Link>
                     <Link to='' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
-                        SALE!
+                        OFFER!
                     </Link>
                     
-                    <button className=' indicator duration-150 hover:text-[#d8a62a] text-2xl'>
-
-                    
+                    {/* <button className=' indicator duration-150 hover:text-[#d8a62a] text-2xl'>
                         {
                             !cartValue?'':<span className="indicator-item badge bg-[#d8a62a] font-bold">1</span>
                         }
                         <label htmlFor="my-modal-6" className="cursor-pointer">
                             <AiOutlineShoppingCart />
                         </label>
-                    </button>
+                    </button> */}
 
                     <button className='duration-150 hover:text-[#d8a62a] text-2xl'>
                         <label htmlFor="my-modal-3" className="cursor-pointer">
                             <AiOutlineSearch />
                         </label>
                     </button>
-                    <Link to='/login/signin' className='duration-150 hover:text-[#d8a62a] text-2xl'>
+                    {/* <Link to='/login/signin' className='duration-150 hover:text-[#d8a62a] text-2xl'>
                         <CgProfile />
-                    </Link>
+                    </Link> */}
                 </div>
             </nav>
-            <Cart value={cartValue} />
+            {/* <Cart value={cartValue} /> */}
             <SearchBar/>
         </div>
     );

@@ -18,6 +18,7 @@ import LoginPage from './components/Pages/LoginPage/LoginPage'
 import SignIn from './components/Pages/LoginPage/SignIn'
 import SignUp from './components/Pages/LoginPage/SignUp'
 import BillInfo from './components/Pages/BillInfo/BillInfo'
+import FAQ from './components/Pages/FAQ/FAQ'
 
 const router = createBrowserRouter([
   {
@@ -70,6 +71,10 @@ const router = createBrowserRouter([
       {
         path:'/billing-info',
         element:<BillInfo/>
+      },
+      {
+        path:'/faq',
+        element:<FAQ/>
       },
       {
         path:'/login',

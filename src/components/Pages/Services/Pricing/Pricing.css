@@ -2,11 +2,12 @@
     border-color: #d8a62a;
 }
 
-.main-box:hover> button{
-    background-color: #d8a62a;
-    color: white;
+.main-box:hover> label{
+    background-color: #6e4f00;
+    /* color: black; */
 }
 
 .main-box > button:hover{
-    background-color: #af7e03;
+    background-color: #af7e03 !important;
+    
 }
