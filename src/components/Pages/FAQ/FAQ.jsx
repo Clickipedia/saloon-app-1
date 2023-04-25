@@ -27,10 +27,9 @@ export const FAQcard = ({num}) => {
     // console.log(num);
     return (
         <div className="collapse mx-auto">
-            <input type="checkbox" />
-            <div className="collapse-title text-xl font-bold bg-white text-black flex justify-between items-center"
-            onClick={()=>setIconToogle(!iconToogle)}
-            >
+            <input className='' type="checkbox" 
+            onClick={()=>setIconToogle(!iconToogle)} />
+            <div className="collapse-title text-xl font-bold bg-white text-black flex justify-between items-center" >
                  <p>
                 {num}. WHAT IS SERVICE INCLUDED?
                  </p>

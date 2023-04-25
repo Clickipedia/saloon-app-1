@@ -57,7 +57,7 @@ const Detail = () => {
                 </div>
             </div>
 
-            <div className='my-10 w-full'>
+            <div className='my-10 w-full '>
                 <h1 className='text-4xl text-center font-light'><span className='font-semibold'>Enjoy Our</span> Other Services</h1>
                 <div className='w-[70%] grid grid-cols-2 gap-10 mx-auto my-16'>
                     {

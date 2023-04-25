@@ -12,10 +12,10 @@ const Footer = () => {
             <div className='uppercase space-x-6 footer-links'>
                 <a href="/about">about us</a>
                 <a href="/contact">contact us</a>
-                <a href="#">blog</a>
+                <a href="/blog">blog</a>
                 <a href="/services">our services</a>
                 <a href="/faq">FAQs</a>
-                <a href="#">Packages</a>
+                <a href="/services/pricing">Packages</a>
             </div>
             <div className='flex gap-8 text-2xl'>
                 <FaFacebookF/>

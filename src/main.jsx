@@ -19,6 +19,7 @@ import SignIn from './components/Pages/LoginPage/SignIn'
 import SignUp from './components/Pages/LoginPage/SignUp'
 import BillInfo from './components/Pages/BillInfo/BillInfo'
 import FAQ from './components/Pages/FAQ/FAQ'
+import Blog from './components/Pages/Blog/Blog'
 
 const router = createBrowserRouter([
   {
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
       {
         path:'/faq',
         element:<FAQ/>
+      },
+      {
+        path:'/blog',
+        element:<Blog/>
       },
       {
         path:'/login',

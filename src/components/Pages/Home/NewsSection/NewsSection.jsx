@@ -18,9 +18,9 @@ const NewsSection = () => {
             </div>
 
             <div className='grid grid-cols-3 w-[70%] mx-auto gap-12 py-10' >
-                <NewsCard/>
-                <NewsCard/>
-                <NewsCard/>
+                <NewsBlogCard/>
+                <NewsBlogCard/>
+                <NewsBlogCard/>
             </div>
 
 
@@ -29,7 +29,7 @@ const NewsSection = () => {
 };
 
 
-const NewsCard = () => {
+export const NewsBlogCard = () => {
 
     return (
         <div className='border'>
@@ -51,6 +51,7 @@ const NewsCard = () => {
         </div>
     )
 }
+
 
 
 export default NewsSection;
