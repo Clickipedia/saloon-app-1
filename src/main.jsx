@@ -67,6 +67,10 @@ const router = createBrowserRouter([
         element:<MyBooking/>
       },
       {
+        path:'/billing-info',
+        element:<MyBooking/>
+      },
+      {
         path:'/login',
         element:<LoginPage/>,
         children:[

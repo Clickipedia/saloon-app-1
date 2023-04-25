@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Cart = ({value}) => {
     return (
@@ -9,11 +10,32 @@ const Cart = ({value}) => {
                 <div className="modal-box">
                     <h3 className="font-bold text-lg">Booking Cart</h3>
                     {
-                        value?<p className="py-4">1 Package Added</p>
-                        : <p className="py-4">No Package Added</p>
+                        !value?
+                        <p className="py-4">No Package Added</p>
+                        : 
+                        <div>
+                            <p className="py-4">1 Package Added</p>
+                            <div className='p-2 space-y-3' >
+                                <img className='w-full h-[12rem] bg-black' src="" alt="" />
+                                <div className='flex justify-between text-xl font-bold' >
+                                    <h1 className='uppercase'>
+                                        Demo Title
+                                    </h1>
+                                    <p className='text-[#d8a62a]' >
+                                        $285
+                                    </p>
+                                </div>
+                                <div className='text-sm text-[#868686]' >
+                                    <p>Thursday, September 18, 2016 - 09:00AM</p>
+                                </div>
+                            </div>
+                        </div>
                     }
                     <div className="modal-action">
-                        <label htmlFor="my-modal-6" className="btn">Cancel</label>
+                        <label htmlFor="my-modal-6" className="btn rounded-none border-2 border-[#d8a62a] bg-transparent text-[#d8a62a]">View cart</label>
+
+                        <Link to='/billing-info' className="btn rounded-none border-none bg-[#d8a62a] text-white" >proccess checkout</Link>
+                        
                     </div>
                 </div>
             </div>
