@@ -32,7 +32,7 @@ const Detail = () => {
         <div>
             <div className='2xl:w-1/2 lg:w-[80%] mx-auto grid grid-cols-2 gap-10' >
                 <div className=''>
-                    <img className='object-cover h-full object-left' src="https://img.freepik.com/free-photo/two-hairstylers-posing-standing-modern-spacy-beaty-salon_651396-986.jpg?w=1060&t=st=1682488645~exp=1682489245~hmac=9466a32602fc66e71a4d0f1e8cf4d593f16d4b27c7cd131326d661bc3bf36a05" alt="" />
+                    <img className='object-cover h-full object-[-40px]' src="https://img.freepik.com/free-photo/two-hairstylers-posing-standing-modern-spacy-beaty-salon_651396-986.jpg?w=1060&t=st=1682488645~exp=1682489245~hmac=9466a32602fc66e71a4d0f1e8cf4d593f16d4b27c7cd131326d661bc3bf36a05" alt="" />
                 </div>
                 <div className='space-y-5 text-[#848493] text-lg'>
                     <p>
