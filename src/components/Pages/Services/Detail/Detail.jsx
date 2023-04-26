@@ -30,7 +30,7 @@ const Detail = () => {
 
     return (
         <div>
-            <div className='w-1/2 mx-auto grid grid-cols-2 gap-10' >
+            <div className='2xl:w-1/2 lg:w-[80%] mx-auto grid grid-cols-2 gap-10' >
                 <div className=''>
                     <img className='object-cover h-full object-left' src="https://img.freepik.com/free-photo/two-hairstylers-posing-standing-modern-spacy-beaty-salon_651396-986.jpg?w=1060&t=st=1682488645~exp=1682489245~hmac=9466a32602fc66e71a4d0f1e8cf4d593f16d4b27c7cd131326d661bc3bf36a05" alt="" />
                 </div>
@@ -59,7 +59,7 @@ const Detail = () => {
 
             <div className='my-10 w-full '>
                 <h1 className='text-4xl text-center font-light'><span className='font-semibold'>Enjoy Our</span> Other Services</h1>
-                <div className='w-[70%] grid grid-cols-2 gap-10 mx-auto my-16'>
+                <div className='2xl:w-[70%] lg:w-[85%] grid grid-cols-2 gap-10 mx-auto my-16'>
                     {
                         servicesData.map(item => {
                             return (

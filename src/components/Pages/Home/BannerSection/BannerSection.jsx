@@ -1,6 +1,8 @@
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 
+import imageBanner from '../../../../assets/all-images/banner-iamge.jpg'
+
 const BannerSection = () => {
 
     const responsive = {
@@ -48,19 +50,19 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid grid-cols-2 w-full h-[75vh] items-center ps-[8rem] bg-[#0e0c2e]'
+            className='grid bg-cover bg-center grid-cols-2 w-full h-[75vh] items-center ps-[8rem] bg-[#0e0c2e]'
             style={{
-                backgroundImage: ``
+                backgroundImage: `url(${imageBanner})`
             }}
         >
             <div className=''></div>
             <div className='space-y-8'>
-                <h4 className='text-4xl font-extralight'>Find and Book</h4>
-                <h1 className='text-6xl uppercase' >
-                    <span className='text-[#d8a62a] '>Beauty services</span> <br />
+                <h4 className='2xl:text-4xl lg:text-2xl font-extralight'>Find and Book</h4>
+                <h1 className='2xl:text-6xl lg:text-4xl uppercase' >
+                    <span className='text-[#000000] '>Beauty services</span> <br />
                     Anywhere, anytime
                 </h1>
-                <button className='py-5 px-16 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white'>
+                <button className='2xl:py-5 lg:py-3 2xl:px-16 lg:px-8 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white 2xl:text-base lg:text-sm'>
                     BOOK A SERVICE NOW!
                 </button>
             </div>

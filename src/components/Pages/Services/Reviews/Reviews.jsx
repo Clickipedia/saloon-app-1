@@ -7,10 +7,11 @@ import { reviews } from './clientReviews';
 
 const Reviews = () => {
 
-    const [rating, setRating] = useState();
+    const [rating, setRating] = useState(0);
+    console.log(rating);
 
     return (
-        <div className='w-[60%] mx-auto'>
+        <div className='2xl:w-[60%] lg:w-[85%] mx-auto'>
             <div className='flex gap-4 flex-col items-center'>
                 <div className='flex text-4xl text-[#d8a62a]'>
                     <AiFillStar />

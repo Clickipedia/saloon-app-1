@@ -7,16 +7,18 @@ import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 const ContactUs = () => {
     return (
         <div>
-            <div className='h-[70vh] flex flex-col justify-center items-center gap-5'>
+            <div className='h-screen flex flex-col justify-center items-center'>
 
+                <div className='text-center space-y-4 mb-32'>
                 <h1 className='text-5xl uppercase' > <span className='font-bold' >contact </span> Us</h1>
-                <a href='#' className=''>
+                <a href='#' className='block'>
                     Make an online appointment or call <span className='font-bold underline' >+1 888 9898</span>
                 </a>
+                </div>
 
             </div>
 
-            <div className='mx-auto my-10 w-[70%] grid grid-cols-2 gap-10 text-white'>
+            <div className='mx-auto my-10 2xl:w-[70%] lg:w-[85%] grid grid-cols-2 gap-10 text-white'>
                 <div className='space-y-5'>
                     <h1 className='text-2xl font-semibold'>OUR MAIN OFFICE</h1>
                     <div className='flex items-center gap-5'>
