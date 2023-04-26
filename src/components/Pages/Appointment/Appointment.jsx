@@ -1,5 +1,6 @@
 import React from 'react';
-import { RxCross1 } from 'react-icons/rx'
+import { RxCross1 } from 'react-icons/rx';
+import { AiFillStar } from 'react-icons/ai';
 const Appointment = () => {
     return (
         <div>
@@ -34,11 +35,12 @@ const Appointment = () => {
                             <label className="label">
                                 <span className="label-text">Select your service</span>
                             </label>
-                            <select className="select select-bordered space-y-3">
+                            <select className="uppercase select select-bordered space-y-3">
                                 <option disabled selected>----</option>
-                                <option className='p-2' >Hair Treatment</option>
-                                <option className='p-2' >Facial Treatment</option>
-                                <option className='p-2' >Eye Treatment</option>
+                                <option className='p-2  leading-relaxed' >Classic Package</option>
+                                <option className='p-2' >TRADITIONAL Package</option>
+                                <option className='p-2' >LUXURY Package* </option>
+                                <option className='p-2' >COMPLETED Package</option>
                             </select>
                         </div>
 

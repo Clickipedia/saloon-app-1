@@ -33,29 +33,29 @@ const ServicesSection = () => {
                     </div>
                 </div>
 
-                <div className='px-10 grid grid-cols-3 my-10' >
+                <div className='md:px-10 px-5 grid grid-cols-3 my-10' >
 
-                    <button onClick={() => setServiceData(['FACIAL MAKEUP TREATMENT', img1])} className='p-5 px-8 flex items-center justify-between border hover:bg-[#d8a62a]'>
-                        <img src={facial} alt="" />
-                        <div className='text-left'>
-                            <h1 className='text-xl'>Facial Makeup</h1>
-                            <p className='text-sm ' >Treatment</p>
+                    <button onClick={() => setServiceData(['FACIAL MAKEUP TREATMENT', img1])} className='md:py-5 md:px-8 p-2 flex items-center justify-between border hover:bg-[#d8a62a]'>
+                        <img className='md:w-[3rem] w-[1rem]' src={facial} alt="" />
+                        <div className='md:text-left text-right'>
+                            <h1 className='md:text-xl text-[10px]'>Facial Makeup</h1>
+                            <p className='md:text-sm text-[8px]' >Treatment</p>
                         </div>
                     </button>
 
-                    <button onClick={() => setServiceData(['Eye MAKEUP TREATMENT', img2])} className='p-5 px-8 flex items-center justify-between border hover:bg-[#d8a62a]'>
-                        <img src={eye} alt="" />
-                        <div className='text-left'>
-                            <h1 className='text-xl'>Eye Makeup</h1>
-                            <p className='text-sm ' >Treatment</p>
+                    <button onClick={() => setServiceData(['Eye MAKEUP TREATMENT', img2])} className='md:py-5 md:px-8 p-2 flex items-center justify-between border hover:bg-[#d8a62a]'>
+                        <img className='md:w-[3rem] w-[1rem]' src={eye} alt="" />
+                        <div className='md:text-left text-right'>
+                            <h1 className='md:text-xl text-[10px]'>Eye Makeup</h1>
+                            <p className='md:text-sm text-[8px]' >Treatment</p>
                         </div>
                     </button>
 
-                    <button onClick={() => setServiceData(['Hair MAKEUP TREATMENT', img3])} className='p-5 px-8 flex items-center justify-between border hover:bg-[#d8a62a]'>
-                        <img src={hair} alt="" />
-                        <div className='text-left'>
-                            <h1 className='text-xl'>Hair Makeup</h1>
-                            <p className='text-sm' >Treatment</p>
+                    <button onClick={() => setServiceData(['Hair MAKEUP TREATMENT', img3])} className='md:py-5 md:px-8 p-2 flex items-center justify-between border hover:bg-[#d8a62a]'>
+                        <img className='md:w-[3rem] w-[1rem]' src={hair} alt="" />
+                        <div className='md:text-left text-right'>
+                            <h1 className='md:text-xl text-[10px]'>Hair Makeup</h1>
+                            <p className='md:text-sm text-[8px]' >Treatment</p>
                         </div>
                     </button>
 
@@ -75,7 +75,7 @@ const ServiceCard = ({ serviceData }) => {
 
     return (
 
-        <div className='grid grid-cols-2 gap-10 my-10 px-10'>
+        <div className='grid md:grid-cols-2 grid-cols-1 gap-10 my-10 px-10'>
             <div>
                 <img className='object-cover' src={serviceData[1]} alt="" />
             </div>
@@ -90,7 +90,7 @@ const ServiceCard = ({ serviceData }) => {
                             // console.log(i);
                             return (
                                 <li key={i} className='flex gap-5'>
-                                    <img src={flower2} alt="" /> Lightens acne scars and spots caused by Sun Damage
+                                    <img className='object-contain' src={flower2} alt="" /> Lightens acne scars and spots caused by Sun Damage
                                 </li>
                             )
                         })

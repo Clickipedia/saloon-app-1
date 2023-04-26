@@ -13,7 +13,7 @@ const Pricing = () => {
 
 
     return (
-        <div className='2xl:w-[60%] lg:w-[85%] mx-auto grid grid-cols-4 gap-5'>
+        <div className='2xl:w-[60%] lg:w-[85%] mx-auto grid md:grid-cols-4 grid-cols-1 p-2 gap-5'>
 
             {
                 data.map(price => <PriceCard key={price.id} price={price} />)

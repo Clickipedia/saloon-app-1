@@ -8,6 +8,7 @@ import { CgProfile } from 'react-icons/cg';
 import Cart from './Cart/Cart';
 import SearchBar from './SearchBar/SearchBar';
 import { CartTooogle } from '../Main/Main';
+import Appointment from '../../Pages/appointment/appointment';
 
 const Header = () => {
 
@@ -18,7 +19,7 @@ const Header = () => {
 
 
     return (
-        <div className='md:py-8 py-2 md:px-32 px-5'>
+        <div className='md:py-8 py-4 md:px-32 px-5'>
             <nav className='flex justify-between items-center relative'>
                 <div>
                     <Link to='/' >
@@ -66,25 +67,36 @@ const Header = () => {
                             <AiOutlineSearch />
                         </label>
                     </button>
+                    <button className='duration-150 uppercase bg-[#d8a62a] appointment hover:bg-white hover:text-black text-xs px-3 py-2 rounded-sm'>
+                        <label htmlFor="my-modal" className="cursor-pointer">
+                            Book Appointment
+                        </label>
+                    </button>
                     {/* <Link to='/login/signin' className='duration-150 hover:text-[#d8a62a] text-2xl'>
                         <CgProfile />
                     </Link> */}
                 </div>
 
                 <div className='md:hidden z-20' >
-                    <button onClick={() => setMenu(!menu)} className='text-white'>
+                    <button onClick={() => setMenu(!menu)} className='text-white text-2xl'>
                         {
                             menu ? <RxCross1 /> : <BiMenu />
                         }
                     </button>
                     {
-                        menu ? '' :
-                            <div className='absolute -left-[20px] bg-black py-2 w-screen'>
+                        !menu ? '' :
+                            <div className='absolute top-[36px] -left-[20px] bg-[#1a1a38] py-2 w-screen'>
                                 <div className='flex flex-col gap-5 px-3' >
                                     <a href="/">Home</a>
-                                    <a href="/">Home</a>
-                                    <a href="/">Home</a>
-                                    <a href="/">Home</a>
+                                    <a href="/about">About</a>
+                                    <a href="/contact">Contact</a>
+                                    <a href="/services">Services</a>
+                                    <a href="/gallery">Gallery</a>
+                                    <button className='duration-150 uppercase bg-[#d8a62a] hover:bg-white hover:text-black text-xs px-3 py-2 rounded-sm'>
+                                        <label htmlFor="my-modal" className="cursor-pointer">
+                                            Book Appointment
+                                        </label>
+                                    </button>
                                 </div>
                             </div>
                     }
@@ -92,6 +104,7 @@ const Header = () => {
             </nav>
             {/* <Cart value={cartValue} /> */}
             <SearchBar />
+            <Appointment />
         </div>
     );
 };

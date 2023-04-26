@@ -29,12 +29,14 @@ const BannerSection = () => {
         <div>
             <Carousel
 
-            className=''
+                className=''
                 responsive={responsive}
                 showDots
-                customDot={<CustomDot/>}
+                customDot={<CustomDot />}
                 dotListClass='p-10  ms-auto h-10 w-32'
-              infinite
+                infinite
+                removeArrowOnDeviceType={['mobile']}
+                autoPlay
             >
                 <BannerCarousel />
                 <BannerCarousel />
@@ -50,19 +52,19 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid bg-cover bg-center grid-cols-2 w-full h-[75vh] items-center ps-[8rem] bg-[#0e0c2e]'
+            className='grid bg-cover md:bg-center bg-[-40px] grid-cols-2 w-full md:h-[75vh] h-[35vh] items-center md:ps-[8rem] bg-[#0e0c2e]'
             style={{
                 backgroundImage: `url(${imageBanner})`
             }}
         >
             <div className=''></div>
-            <div className='space-y-8'>
+            <div className='md:space-y-8'>
                 <h4 className='2xl:text-4xl lg:text-2xl font-extralight'>Find and Book</h4>
                 <h1 className='2xl:text-6xl lg:text-4xl uppercase font-light' >
                     <span className='text-[#000000] font-semibold '>Beauty services</span> <br />
                     Anywhere, anytime
                 </h1>
-                <button className='2xl:py-5 lg:py-3 2xl:px-16 lg:px-8 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white 2xl:text-base lg:text-sm'>
+                <button className='2xl:py-5 lg:py-3 py-1 2xl:px-16 px-2 lg:px-8 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white 2xl:text-base lg:text-sm text-xs'>
                     BOOK A SERVICE NOW!
                 </button>
             </div>
@@ -76,7 +78,7 @@ const CustomDot = ({ onMove, index, onClick, active }) => {
     // active is provided by this lib for checking if the item is active or not.
     return (
         <li
-            className={`ms-2 2xl:mb-8 md:mb-4 mb-2 p-[2px] w-4 h-4 border cursor-pointer ${active ? "active bg-[#d8a62a] " : "inactive bg-transparent "}`}
+            className={`ms-2 2xl:mb-8 md:mb-4 p-[2px] md:w-4 w-2 md:h-4 h-2 border cursor-pointer ${active ? "active bg-[#d8a62a] " : "inactive bg-transparent "}`}
             onClick={() => onClick()}
         >
 

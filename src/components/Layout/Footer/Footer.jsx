@@ -7,9 +7,9 @@ import logo from '../../../assets/all-images/footer-Logo.png'
 
 const Footer = () => {
     return (
-        <div className=' pt-10 tracking-wider font-light flex flex-col gap-5 items-center justify-center bg-[#1f1f3f]'>
+        <div className='p-2 md:pt-10 tracking-wider font-light flex flex-col gap-5 items-center justify-center bg-[#1f1f3f]'>
             <img src={logo} alt="" />
-            <div className='uppercase space-x-6 footer-links'>
+            <div className='uppercase md:text-base text-center text-xs space-x-6 footer-links'>
                 <a href="/about">about us</a>
                 <a href="/contact">contact us</a>
                 {/* <a href="/blog">blog</a> */}
