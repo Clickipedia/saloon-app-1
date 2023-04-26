@@ -19,18 +19,19 @@ const MakeupArtistSection = () => {
                 </div>
             </div>
 
-            <div className=' mx-auto grid grid-cols-4 w-[70%] mt-10'>
+            <div className=' mx-auto grid md:grid-cols-4 grid-cols-2 2xl:w-[70%] lg:w-[90%] mt-10'>
 
 
                 {
                     [...Array(4)].map((v,i) => {
                         // console.log(i);
                         return (
-                            <div key={i} className='w-[20rem] main-box'>
-                                <div className='mx-auto upper-box h-[20rem] bg-slate-300'>
-                                    {/* <img src="" alt="" /> */}
+                            <div key={i} className='2xl:w-[20rem] lg:w-[15rem] 2xl:h-[20rem] lg:h-[15rem] main-box mb-20'>
+                                <div className='relative mx-auto w-full h-full upper-box bg-slate-300'>
+                                    <img className='object-cover w-full h-full' src="https://img.freepik.com/free-photo/smiling-female-owner-hairdresser-salon_329181-1937.jpg?w=360&t=st=1682487350~exp=1682487950~hmac=30ac947130312cee364428a8c12b0c97a60ed46f57a81387c567c9b68f83fdd0" alt="" />
+                                    <span className='absolute top-0 bg-black w-full h-full duration-200 opacity-50 hover:opacity-0' ></span>
                                 </div>
-                                <div className='text-black down-box bg-white py-6 px-5 ' >
+                                <div className='text-black down-box  bg-white 2xl:py-6 lg:py-3 px-5 ' >
                                     <div className='flex justify-between'>
                                         <div>
                                             <h1 className='text-xl font-bold'>Da Vinci</h1>

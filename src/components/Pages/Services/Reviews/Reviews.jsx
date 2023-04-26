@@ -67,8 +67,8 @@ const DisplayReview = ({ review }) => {
 
     return (
         <div className='flex gap-10 items-center'>
-            <div className='w-32 h-28 bg-white rounded-[50%]'>
-
+            <div className='w-32 h-28 overflow-hidden bg-white rounded-[50%]'>
+                <img className='h-full object-cover' src={review.img} alt="" />
             </div>
 
             <div className='space-y-5'>

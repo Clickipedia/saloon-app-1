@@ -54,7 +54,7 @@ const Services = () => {
                         </NavLink>
                     </li>
 
-                    <li>
+                    {/* <li>
                         <NavLink to='/services/photos' className={({isActive})=>isActive?
                         `text-white`:` text-[#5a5a6f]`} >
                         <button className='hover:border-2  w-40 h-40 rounded-xl text-center uppercase font-medium space-y-3' >
@@ -62,7 +62,7 @@ const Services = () => {
                                 <p>Photos</p>
                             </button>
                         </NavLink>
-                    </li>
+                    </li> */}
 
                     <li>
                         <NavLink to='/services/reviews' className={({isActive})=>isActive?

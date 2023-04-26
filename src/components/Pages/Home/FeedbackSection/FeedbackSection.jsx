@@ -24,7 +24,7 @@ const FeedbackSection = () => {
         },
         tablet: {
             breakpoint: { max: 1024, min: 464 },
-            items: 2
+            items: 3
         },
         mobile: {
             breakpoint: { max: 464, min: 0 },
@@ -49,13 +49,13 @@ const FeedbackSection = () => {
                 autoPlaySpeed={5000}
                 // additionalTransfrom={3000}
                 infinite
-                // rewind
-                // rewindWithAnimation
+                rewind
+                rewindWithAnimation
                 // pauseOnHover
                 // keyBoardControl={true}
                 
-                customTransition="all 30s linear 0s"
-                // transitionDuration={10000}
+                customTransition="all 20s linear 0s"
+                transitionDuration={10000}
                 
                 >
                {

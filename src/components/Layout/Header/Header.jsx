@@ -24,14 +24,11 @@ const Header = () => {
                     <Link to='/' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         HOME
                     </Link>
-                    <Link to='/services/detail' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
-                        SERVICES
-                    </Link>
                     <Link to='/about' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         ABOUT
                     </Link>
-                    <Link to='/contact' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
-                        CONTACT US
+                    <Link to='/services/detail' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                        SERVICES
                     </Link>
                     {/* <Link to='/my-booking' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         MY BOOKING
@@ -43,6 +40,9 @@ const Header = () => {
 
                     <Link to='/gallery' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
                         GALLERY
+                    </Link>
+                    <Link to='/contact' className='duration-150 hover:text-[#d8a62a] tracking-wider text-sm' >
+                        CONTACT US
                     </Link>
                     
                     {/* <button className=' indicator duration-150 hover:text-[#d8a62a] text-2xl'>

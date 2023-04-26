@@ -56,8 +56,10 @@ const ClientFeedback = () => {
             </p>
             <div className='flex items-center gap-5 w-[273px] mx-auto'>
                 <div
-                    className='bg-slate-400 w-20 h-20 border-2 rounded-[50%]'
-                ></div>
+                    className='bg-slate-400 w-20 h-20 border-2 rounded-[50%] overflow-hidden'
+                >
+                    <img className='w-full h-full object-cover' src="https://img.freepik.com/free-photo/cheerful-indian-businessman-smiling-closeup-portrait-jobs-career-campaign_53876-129417.jpg?w=1060&t=st=1682489210~exp=1682489810~hmac=a493b81be34b3a2d6a44644b5789280cee6a310de485b4cf0efef83966009f63" alt="" />
+                </div>
                 <div>
                     <h3 className='text-lg uppercase'>Cynthia Nelson</h3>
                     <p className='text-sm text-[#848493]' >customer</p>

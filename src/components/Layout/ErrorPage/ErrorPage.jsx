@@ -22,7 +22,7 @@ const ErrorPage = () => {
                         <h1 className='text-6xl font-bold' >Oops! Sorry!</h1>
                         <h4 className='text-5xl font-light' >Page {error.statusText}</h4>
                         <p className='w-2/3 font-light text-[#ceced1]' >
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                        {error.error.message}
                         </p>
                         <button className='btn rounded-none bg-transparent border-2 border-white' 
                         onClick={()=>navigate('/')}

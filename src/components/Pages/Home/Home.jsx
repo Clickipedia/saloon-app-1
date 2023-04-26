@@ -25,7 +25,7 @@ const Home = () => {
             <MakeupArtistSection/>
             <AchievementSection/>
             <FeedbackSection/>
-            <NewsSection/>
+            {/* <NewsSection/> */}
             <SubscribeSection/>
         </div>
     );

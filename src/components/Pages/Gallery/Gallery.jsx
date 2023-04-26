@@ -1,7 +1,7 @@
 import React from 'react';
 
 import flower from '../../../assets/all-images/Flower-icon.png';
-import { PhotoProvider } from 'react-photo-view';
+
 
 const Gallery = () => {
 
@@ -27,7 +27,7 @@ const Gallery = () => {
                     <div className='bg-[#848493] w-32 h-[2px]' ></div>
                 </div>
             </div>
-            <PhotoProvider>
+
 
                 <div className='grid grid-cols-4 my-120 w-[70%] mx-auto'>
                     {
@@ -40,7 +40,7 @@ const Gallery = () => {
                         })
                     }
                 </div>
-            </PhotoProvider>
+
         </div>
     );
 };
