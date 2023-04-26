@@ -1,7 +1,9 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import logo from '../../../assets/all-images/logo.png'
 import { Link, NavLink } from 'react-router-dom';
 import { AiOutlineShoppingCart, AiOutlineSearch } from 'react-icons/ai';
+import { BiMenu } from 'react-icons/bi';
+import { RxCross1 } from 'react-icons/rx';
 import { CgProfile } from 'react-icons/cg';
 import Cart from './Cart/Cart';
 import SearchBar from './SearchBar/SearchBar';
@@ -12,15 +14,19 @@ const Header = () => {
 
     const [cartValue, setCartValue] = useContext(CartTooogle);
 
+    const [menu, setMenu] = useState(false)
+
 
     return (
-        <div className='py-8 px-32'>
-            <nav className='flex justify-between items-center'>
+        <div className='md:py-8 py-2 md:px-32 px-5'>
+            <nav className='flex justify-between items-center relative'>
                 <div>
-                    <Link to='/' ><img src={logo} alt="" /></Link>
+                    <Link to='/' >
+                        <img className='md:w-36 w-20 md:h-12 object-contain' src={logo} alt="" />
+                    </Link>
                 </div>
 
-                <div className='flex gap-10 items-center'>
+                <div className='md:flex hidden gap-10 items-center'>
                     <NavLink to='/' className={`duration-150 hover:text-[#d8a62a] tracking-wider text-sm ${(({ isActive, isPending }) =>
                         isPending ? "pending" : isActive ? "text-[#d8a62a]" : "")}`} >
                         HOME
@@ -63,6 +69,25 @@ const Header = () => {
                     {/* <Link to='/login/signin' className='duration-150 hover:text-[#d8a62a] text-2xl'>
                         <CgProfile />
                     </Link> */}
+                </div>
+
+                <div className='md:hidden z-20' >
+                    <button onClick={() => setMenu(!menu)} className='text-white'>
+                        {
+                            menu ? <RxCross1 /> : <BiMenu />
+                        }
+                    </button>
+                    {
+                        menu ? '' :
+                            <div className='absolute -left-[20px] bg-black py-2 w-screen'>
+                                <div className='flex flex-col gap-5 px-3' >
+                                    <a href="/">Home</a>
+                                    <a href="/">Home</a>
+                                    <a href="/">Home</a>
+                                    <a href="/">Home</a>
+                                </div>
+                            </div>
+                    }
                 </div>
             </nav>
             {/* <Cart value={cartValue} /> */}

@@ -58,8 +58,8 @@ const BannerCarousel = () => {
             <div className=''></div>
             <div className='space-y-8'>
                 <h4 className='2xl:text-4xl lg:text-2xl font-extralight'>Find and Book</h4>
-                <h1 className='2xl:text-6xl lg:text-4xl uppercase' >
-                    <span className='text-[#000000] '>Beauty services</span> <br />
+                <h1 className='2xl:text-6xl lg:text-4xl uppercase font-light' >
+                    <span className='text-[#000000] font-semibold '>Beauty services</span> <br />
                     Anywhere, anytime
                 </h1>
                 <button className='2xl:py-5 lg:py-3 2xl:px-16 lg:px-8 border-2 hover:bg-[#d8a62a] hover:border-[#d8a62a] hover:text-white 2xl:text-base lg:text-sm'>

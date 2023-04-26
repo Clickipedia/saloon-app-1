@@ -31,10 +31,10 @@ const SignIn = () => {
                             className='block text-sm text-slate-500'
                         >Password</label>
                         <input type={eye?"text":"password"} name="" id=""
-                            className='border-b-2 w-full p-1 outline-none'
+                            className='border-b-2 w-full p-1 outline-none pe-8'
                         />
-                        <button onClick={handleEye} className='absolute right-2 top-8'>
-                           { eye? <BsFillEyeFill/>  :<BsFillEyeSlashFill/>} 
+                        <button onClick={handleEye} className='absolute right-2 top-7'>
+                           { eye? <BsFillEyeFill/>  : <BsFillEyeSlashFill/>} 
                         </button>
                     </div>
 

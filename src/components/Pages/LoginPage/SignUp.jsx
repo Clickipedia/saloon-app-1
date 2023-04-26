@@ -1,9 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+import {BsFillEyeSlashFill, BsFillEyeFill} from 'react-icons/bs'
 
 const SignUp = () => {
+
+
+    const [eye, setEye] = useState(false);
+
+
+    const handleEye =()=>{
+        setEye(!eye)
+    }
+
+    const handleForm = (e) =>{
+        e.preventDefault();
+    }
+
+
     return (
         <div>
-            <form action="" className='space-y-14 mt-14' >
+            <form onSubmit={handleForm} className='space-y-14 mt-14' >
                     <div className=''>
                         <label htmlFor=""
                             className='block text-sm text-slate-500'
@@ -20,13 +36,16 @@ const SignUp = () => {
                             className='border-b-2 w-full p-1 outline-none'
                         />
                     </div>
-                    <div>
+                    <div className='relative'>
                         <label htmlFor=""
                             className='block text-sm text-slate-500'
                         >Password</label>
-                        <input type="password" name="" id=""
-                            className='border-b-2 w-full p-1 outline-none'
+                        <input type={eye?'text':'password'} name="" id=""
+                            className=' border-b-2 w-full p-1 outline-none pe-8'
                         />
+                          <button onClick={handleEye} className='absolute right-2 top-7'>
+                           { eye? <BsFillEyeFill/>  :<BsFillEyeSlashFill/>} 
+                        </button>
                     </div>
 
                     <div className='text-center'>
