@@ -1,7 +1,7 @@
 import React from 'react';
 
 import 'react-photo-view/dist/react-photo-view.css';
-import { PhotoProvider, PhotoView } from 'react-photo-view';
+
 
 const Photos = () => {
 
@@ -16,17 +16,7 @@ const Photos = () => {
         <div>
             <h1 className='text-center text-3xl font-bold' >Photos</h1>
 
-            {/* <div className='w-[60%] mx-auto mt-20'>
-                <PhotoProvider>
-                    <div className="grid grid-cols-3">
-                        {images.map((item, index) => (
-                            <PhotoView key={index} src={item}>
-                                <img src={item} alt="" />
-                            </PhotoView>
-                        ))}
-                    </div>
-                </PhotoProvider>
-            </div> */}
+
         </div>
     );
 };
