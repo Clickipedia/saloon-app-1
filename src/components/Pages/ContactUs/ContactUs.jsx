@@ -4,16 +4,24 @@ import React from 'react';
 import { MdLocalPhone } from 'react-icons/md';
 import { HiOutlineLocationMarker, HiOutlineMail } from 'react-icons/hi';
 
+import image from  '../../../assets/all-images/contact-image.jpg'
+
 const ContactUs = () => {
     return (
-        <div>
-            <div className='h-screen flex flex-col justify-center items-center'>
+        <div className='' >
+            <div className=' h-[50vh] bg-cover bg-center flex flex-col justify-center items-center bg-black'
+            
+            style={{
+                backgroundImage:`url(${image})`
+            }}
 
-                <div className='text-center space-y-4 mb-32'>
+            >
+
+                <div className='text-center space-y-4 all-bg-filter'>
                 <h1 className='text-5xl uppercase' > <span className='font-bold' >contact </span> Us</h1>
-                <a href='#' className='block'>
+                {/* <a href='#' className='block'>
                     Make an online appointment or call <span className='font-bold underline' >+1 888 9898</span>
-                </a>
+                </a> */}
                 </div>
 
             </div>

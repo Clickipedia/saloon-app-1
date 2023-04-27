@@ -10,6 +10,7 @@ import { GrContactInfo } from 'react-icons/gr';
 
 import './Services.css';
 
+import image from '../../../assets/all-images/service-image.jpg'
 const Services = () => {
 
 
@@ -21,13 +22,19 @@ const Services = () => {
 
 
     return (
-        <div className='py-20'>
+        <div className='pb-20'>
 
-            <div className=" h-screen text-center grid place-items-center" >
-                <div className=' space-y-5 mb-40'>
-                    <h1 className="text-5xl font-bold" >FACIAL MAKEUP TREATMENT</h1>
-                    <p className="text-[#848493] w-[60%] mx-auto text-lg " >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ipsum dolor sit amet.</p>
-                    <button className="text-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase btn-effect" >Book Now!</button>
+            <div className=" h-[50vh] bg-cover text-center grid place-items-center bg-black"
+            style={{
+                backgroundImage:`url(${image})`
+            }}
+            >
+                <div className='all-bg-filter' >
+                    <div className=' space-y-5'>
+                        <h1 className="text-5xl font-bold" >FACIAL MAKEUP TREATMENT</h1>
+                        <p className="text-[#ffffff] w-[60%] mx-auto text-lg " >Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ipsum dolor sit amet.</p>
+                        <button className="bg-[#d8a62a] border-2 border-[#d8a62a] px-12 py-3 font-medium uppercase btn-effect" >Book Now!</button>
+                    </div>
                 </div>
             </div>
 

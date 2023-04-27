@@ -19,11 +19,11 @@ const Header = () => {
 
 
     return (
-        <div className='md:py-8 py-4 md:px-32 px-5'>
+        <div className='md:py-1 py-4 md:px-32 px-5'>
             <nav className='flex justify-between items-center relative'>
                 <div>
                     <Link to='/' >
-                        <img className='md:w-36 w-20 md:h-12 object-contain' src={logo} alt="" />
+                        <img className='md:w-40 w-20 md:h-28 object-contain' src={logo} alt="" />
                     </Link>
                 </div>
 

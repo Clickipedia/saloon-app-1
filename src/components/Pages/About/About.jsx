@@ -7,15 +7,23 @@ import MakeupArtistSection from '../Home/MakeupArtistSection/MakeupArtistSection
 import CountUp from 'react-countup';
 import ScrollTrigger from 'react-scroll-trigger';
 
+import image from '../../../assets/all-images/about-image.jpg'
+
 const About = () => {
 
     const [counterOn, setCounterOn] = useState(false);
 
     return (
         <div className='mb-20'>
-            <div className='h-screen grid place-items-center'>
+            <div className='h-[50vh] bg-cover bg-center  grid place-items-center bg-black'
+                style={{
+                    backgroundImage: `url(${image})`
+                }}
+            >
+                <div className='all-bg-filter'>
 
-                <h1 className='md:text-5xl text-2xl mb-32' > <span className='font-bold' >WE ARE</span> PASSIONATE TEAM</h1>
+                    <h1 className='md:text-5xl text-2xl' > <span className='font-bold' >WE ARE</span> PASSIONATE TEAM</h1>
+                </div>
 
             </div>
             <div className=' bg-[#1e1e45] 2xl:px-[20rem] lg:px-20 px-5 py-20 space-y-10'>
@@ -31,7 +39,7 @@ const About = () => {
                 <ScrollTrigger onEnter={() => setCounterOn(true)} onExit={() => setCounterOn(false)} >
 
 
-                    <div className='2xl:w-[85rem] 2xl:-ms-[3.5rem] px-32 py-10 counting-section text-center grid grid-cols-3' >
+                    <div className='2xl:w-[85rem] 2xl:-ms-[3.5rem] md:px-32 py-10 counting-section text-center grid grid-cols-3' >
                         <div>
                             <h1 className='md:text-4xl text-xl font-semibold'>
                                 {counterOn && <CountUp start={0} end={3250} duration={1.2} delay={0} />}+
