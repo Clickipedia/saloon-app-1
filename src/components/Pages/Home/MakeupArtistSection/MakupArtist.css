@@ -1,0 +1,22 @@
+.main-box{
+    
+    transition: all .2s linear;
+}
+/* 
+.upper-box{
+    
+} */
+
+.down-box{
+    visibility: hidden;
+}
+
+.upper-box:hover + .down-box{
+    transition: all .2s linear;
+    visibility: visible;
+    transition-duration: 1000;
+}
+.upper-box:hover{
+    transition: all .15s linear;
+    background-color: #d8a62a;
+}
