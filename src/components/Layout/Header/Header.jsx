@@ -20,11 +20,11 @@ const Header = () => {
 
 
     return (
-        <div className='md:py-1 py-4 md:px-32 px-5'>
+        <div className='md:py-1 py-2 md:px-32 px-5'>
             <nav className='flex justify-between items-center relative'>
                 <div>
                     <Link to='/' >
-                        <img className='md:w-40 w-20 md:h-16 object-contain' src={logo} alt="" />
+                        <img className='md:w-40 w-24 md:h-16 object-contain' src={logo} alt="" />
                     </Link>
                 </div>
 
@@ -46,7 +46,7 @@ const Header = () => {
 
                     <div className="dropdown">
                         <label tabIndex={0} className="cursor-pointer flex justify-between items-center gap-1">
-                            Service <HiOutlineChevronDown/>
+                            Service <HiOutlineChevronDown />
                         </label>
                         <ul tabIndex={0} className="dropdown-content border py-1 bg-white uppercase text-center">
                             <li>
@@ -122,7 +122,31 @@ const Header = () => {
                                     <a href="/">Home</a>
                                     <a href="/about">About</a>
                                     <a href="/contact">Contact</a>
-                                    <a href="/services">Services</a>
+                                    <div className="dropdown">
+                                        <label tabIndex={0} className="cursor-pointer flex justify-between items-center gap-1">
+                                            Service <HiOutlineChevronDown />
+                                        </label>
+                                        <ul tabIndex={0} className="dropdown-content border py-1 text-black bg-white uppercase text-center">
+                                            <li>
+                                                <NavLink className='px-14 py-1  border-b-2 border-white hover:border-[#d8a62a] ' >Bridal</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className='px-7 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Engagement</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className='px-8 py-[5px] border-b-2 border-white hover:border-[#d8a62a]' >Non-Bridal</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className='px-14 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Fashion</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className='px-12 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Editorial</NavLink>
+                                            </li>
+                                            <li>
+                                                <NavLink className='px-16 py-[5px] border-b-2 border-white hover:border-[#d8a62a] w-full' >Party</NavLink>
+                                            </li>
+                                        </ul>
+                                    </div>
                                     <a href="/gallery">Gallery</a>
                                     <button className='duration-150 uppercase bg-[#d8a62a] hover:bg-white hover:text-black text-xs px-3 py-2 rounded-sm'>
                                         <label htmlFor="my-modal" className="cursor-pointer">

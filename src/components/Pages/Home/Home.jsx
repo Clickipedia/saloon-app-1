@@ -20,13 +20,13 @@ const Home = () => {
             <BannerSection/>
             <LearnmoreSection/>
             <ServicesSection/>
-            <WorkSection/>
             <PackageSection/>
-            <MakeupArtistSection/>
-            <AchievementSection/>
+            <WorkSection/>
+            {/* <MakeupArtistSection/> */}
+            {/* <AchievementSection/> */}
             <FeedbackSection/>
             {/* <NewsSection/> */}
-            <SubscribeSection/>
+            {/* <SubscribeSection/> */}
         </div>
     );
 };

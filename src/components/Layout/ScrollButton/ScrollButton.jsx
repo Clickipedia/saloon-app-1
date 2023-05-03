@@ -30,7 +30,7 @@ window.addEventListener('scroll', toggleVisible);
 
 return (
 	<Button>
-	<FaArrowCircleUp onClick={scrollToTop}
+	<FaArrowCircleUp onClick={scrollToTop} className='md:text-[3rem] text-[2rem]'
 	style={{display: visible ? 'inline' : 'none'}} />
 	</Button>
 );
@@ -39,10 +39,9 @@ return (
   
  const Button = styled.div`
    position: fixed; 
-   right: 60px;
-   bottom: 80px;
+   right: 30px;
+   bottom: 50px;
    height: 20px;
-   font-size: 3rem;
    z-index: 1;
    cursor: pointer;
    color: #D19F68;

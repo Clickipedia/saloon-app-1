@@ -54,17 +54,17 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid bg-cover md:bg-center bg-[-40px] grid-cols-2 w-full md:h-[92vh] h-[35vh] items-center md:px-[4rem] bg-transparent text-white gap-10'
+            className='grid bg-cover md:bg-center bg-right grid-cols-2 w-full md:h-[92vh] h-[35vh] items-center md:px-[4rem] bg-transparent text-white gap-10'
             style={{
                 backgroundImage: `url(${imageBanner})`
             }}
         >
 
-            <div className='md:space-y-5'>
+            <div className='md:space-y-5 space-y-2 md:px-0 px-2.5'>
 
                 <h3 className='2xl:text-3xl lg:text-2xl font-light text-[#D19F68]'>MORE THEN 200 CUSTOMERS </h3>
                 <h2 className='2xl:text-[4.5rem] lg:text-[3.2rem] font-semibold' >TOP MAKEUP ARTIST</h2>
-                <p className='2xl:text-xl lg:text-lg font-extralight tracking-[.05rem] leading-10 pb-5'
+                <p className='2xl:text-xl lg:text-lg font-extralight tracking-[.05rem] leading-10 pb-5 md:block hidden'
                     style={{
                         fontFamily: "'Open Sans', sans-serif"
                     }}
@@ -77,7 +77,7 @@ const BannerCarousel = () => {
                     <span className='px-4'> Pre-wedding makeup </span>
                 </p>
                 <button>
-                    <label htmlFor='my-modal' className='hover:bg-[#D19F68] border border-[#D19F68] text-[#D19F68] hover:text-white uppercase px-8 py-3 rounded-sm tracking-wide'
+                    <label htmlFor='my-modal' className='hover:bg-[#D19F68] border border-[#D19F68] text-[#D19F68] hover:text-white uppercase md:px-8 px-3 md:py-3 py-1 rounded-sm tracking-wide md:text-lg text-[10px]'
                         style={{
                             fontFamily: " 'Montserrat', sans-serif"
                         }}
@@ -100,7 +100,7 @@ const CustomDot = ({ onMove, index, onClick, active }) => {
     // active is provided by this lib for checking if the item is active or not.
     return (
         <li
-            className={`ms-2 2xl:mb-8 md:mb-4 p-[2px] md:w-4 w-2 md:h-4 h-2 border cursor-pointer ${active ? "active bg-[#d8a62a] " : "inactive bg-transparent "}`}
+            className={`ms-2 2xl:mb-8 md:mb-4 mb-2 p-[2px] md:w-4 w-2 md:h-4 h-2 border cursor-pointer ${active ? "active bg-[#d8a62a] " : "inactive bg-transparent "}`}
             onClick={() => onClick()}
         >
 

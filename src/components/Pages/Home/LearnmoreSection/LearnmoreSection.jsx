@@ -6,12 +6,12 @@ const LearnmoreSection = () => {
     return (
         <div className='text-white bg-[#0a0a23] 2xl:h-[65vh] lg:h-[70vh] 2xl:px-40 lg:px-10  relative'>
 
-            <div className='relative'>
-                <div className='-top-[53px] absolute ms-10'>
-                    <img className='w-[30rem]' src={image} alt="" />
+            <div className='md:relative md:py-0 py-5'>
+                <div className='-top-[53px] md:absolute ms-10'>
+                    <img className='md:w-[30rem] w-[18rem]' src={image} alt="" />
                 </div>
 
-                <div className='w-1/2 ms-auto pt-20'>
+                <div className='md:w-1/2 ms-auto pt-20 px-5'>
                     <h3 className='2xl:text-3xl lg:text-2xl font-light '>BEST BRIDAL MAKEUP ARTIST IN KOLKATA </h3>
                     <h2 className='2xl:text-[4.5rem] lg:text-[3.2rem] font-semibold text-[#D19F68]' >PRIYANKA PAUL</h2>
                     <p className='2xl:text-xl lg:text-lg font-extralight tracking-[.05rem] leading-10 pb-5'

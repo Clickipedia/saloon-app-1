@@ -12,7 +12,7 @@ const Footer = () => {
                 fontFamily: "'Montserrat', sans-serif"
             }}
         >
-            <div className='grid grid-cols-12 gap-5 items-center justify-center text-[#1f1f3f] 2xl:px-52 py-10' >
+            <div className='grid md:grid-cols-12 grid-cols-1 p-5 gap-5 items-center justify-center text-[#1f1f3f] 2xl:px-52 py-10' >
                 <img className='col-span-3 mb-auto w-[15rem]' src={logo} alt="" />
                 <div className='uppercase grid grid-cols-1 gap-5 col-span-3'>
                     <a className='hover:translate-x-1 duration-200 ' href="/">Home</a>
@@ -31,13 +31,13 @@ const Footer = () => {
                 </div>
 
                <div className='col-span-4 mb-auto' >
-                <div className='gap-3 text-right flex'>
+                <div className='gap-3 md:text-right flex'>
                     <input className='border px-5 py-3 rounded-md w-full' type="text" placeholder='Enter your e-mail address' />
                     <button className='px-7 py-3 bg-[#D8A62A] hover:bg-[#be8f15] rounded-md text-white ' >
                         SUBSCRIBE
                     </button>
                 </div>
-               <div className='flex justify-end gap-8 text-2xl mt-10'>
+               <div className='flex md:justify-end justify-center gap-8 text-2xl mt-10'>
                     <FaFacebookF />
                     <AiOutlineTwitter />
                     <AiOutlineInstagram />

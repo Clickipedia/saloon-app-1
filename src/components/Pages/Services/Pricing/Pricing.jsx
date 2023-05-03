@@ -13,7 +13,7 @@ const Pricing = () => {
 
 
     return (
-        <div className='2xl:w-[60%] lg:w-[85%] mx-auto grid md:grid-cols-4 grid-cols-1 p-2 gap-5'>
+        <div className='2xl:w-[65%] lg:w-[85%] mx-auto grid md:grid-cols-4 grid-cols-1 p-2 gap-8'>
 
             {
                 data.map(price => <PriceCard key={price.id} price={price} />)
@@ -30,16 +30,20 @@ const PriceCard = ({ price }) => {
     const [cartValue , setCartValue] = handleCart
 
     return (
-        <div className='border-2 main-box p-8 tracking-wider'>
-            <div className='space-y-3'>
+        <div className='border-2 main-box p-8 tracking-wider rounded-[16px] bg-[#1A1A38] hover:scale-105'
+        style={{
+            fontFamily:"'Montserrat', sans-serif"
+        }}
+        >
+            <div className='space-y-3 relative'>
 
-                {price.popular ? <span className='text-[10px] bg-[#d8a62a] p-1'
+                {price.popular ? <span className='text-[16px] bg-[#EC687C] py-1 px-8 absolute -top-16 md:left-4 left-[20%] rounded-[20px]'
                 > Most Popular </span> :
-                    <span className='p-1' ></span>
+                    ''
                 }
 
 
-                <h1 className='text-xl uppercase' ><span className='font-bold block' >{price.title}</span>
+                <h1 className='text-xl font-extralight uppercase' ><span className='font-bold block' >{price.title}</span>
                     PACKAGE
                 </h1>
 
@@ -65,8 +69,8 @@ const PriceCard = ({ price }) => {
 
             <label
                 htmlFor="my-modal"
-                className='btn bg-transparent hover:bg-[#d8a62a] hover:text-white rounded-none text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
-            >Select
+                className='btn bg-transparent hover:bg-[#D8A62A] hover:text-white text-[#d8a62a] duration-150 border border-[#d8a62a] py-2 w-full'
+            >Book
             </label>
         <Appointment/>
         </div>

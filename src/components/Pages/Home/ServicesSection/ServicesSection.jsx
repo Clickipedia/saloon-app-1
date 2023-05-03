@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
 
 import flower from '../../../../assets/all-images/Flower-icon.png';
-import flower2 from '../../../../assets/all-images/Flower-icon-2.png';
-import facial from '../../../../assets/all-images/facial-icon.png';
-import eye from '../../../../assets/all-images/eye-icon.png';
-import hair from '../../../../assets/all-images/hair-icon.png';
+import bridal from '../../../../assets/all-images/bridal.png';
+import engagement from '../../../../assets/all-images/engagement.png';
+import nonBridal from '../../../../assets/all-images/non-bridal.png';
+import fashion from '../../../../assets/all-images/fashion.png';
+import editorial from '../../../../assets/all-images/editorial.png';
+import party from '../../../../assets/all-images/party.png';
+import makeupData from './data'
+import { Link } from 'react-router-dom';
 
 
 const ServicesSection = () => {
 
-    const img1 = 'https://img.freepik.com/free-photo/hairstylist-looking-client-mirror_23-2148242870.jpg?w=1060&t=st=1682487588~exp=1682488188~hmac=171e25a8bd0a710952ff745ee20c758a59ca082c69b63563d5739be0511e9bf1'
-    const img2 = 'https://img.freepik.com/free-photo/young-woman-getting-beauty-treatment-her-eyebrows_23-2148910543.jpg?w=1060&t=st=1682487701~exp=1682488301~hmac=22fd243bef9312b1179a847ec26ae15f2a4fed7c5f693de5c5c272d71eec4e79'
-    const img3 = 'https://img.freepik.com/free-photo/client-doing-hair-cut-barber-shop-salon_1303-20687.jpg?w=1060&t=st=1682487865~exp=1682488465~hmac=281cbf39428b3e9a622804406fba7d241f42210928b50b0569b3f618a5fc71a2'
+    const [serviceData, setServiceData] = useState(makeupData[0])
 
-    const [serviceData, setServiceData] = useState([
-        'FACIAL MAKEUP TREATMENT', img1
-    ])
-
-    // console.log(serviceData);
+    // console.log(makeupData[0]);
 
 
     return (
@@ -35,32 +33,56 @@ const ServicesSection = () => {
 
                 <div className='md:px-10 px-5 grid grid-cols-6 my-10' >
 
-                    <button onClick={() => setServiceData(['BRIDAL MAKEUP', img1])} className=''>
-                        <div className='mx-auto w-[6rem] h-[6rem] rounded-[50%] overflow-hidden'>
-                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={'https://1.bp.blogspot.com/-K2OTtt4vUHA/YDIDbFBT6TI/AAAAAAAAh-0/2J6DGn-OZ-gOz8yWhui2cIdas99opxzzgCLcBGAsYHQ/s1080/Cute%2Band%2BBeautiful%2BBridal%2BMakeup%2Band%2BDress%2BDP%2BIdeas%2Bfor%2BGirls%2B2021.jpg'} alt="" />
-                        </div>
+                    <button onClick={() => setServiceData(makeupData[0])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={bridal} alt="" />
+                        
                         <div className='mt-2 text-center'>
-                            <h1 className='text-[16px]'>Bridal Makeup</h1>
+                            <h1 className='md:text-[16px] text-[10px]'>Bridal</h1>
                         </div>
                     </button>
 
-                    <button onClick={() => setServiceData(['ENGAGEMENT MAKEUP', img2])} className=''>
-                        <div className='mx-auto w-[6rem] h-[6rem] rounded-[50%] overflow-hidden'>
-                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={'https://images.news18.com/ibnlive/uploads/2022/06/untitled-design-6-38-16558797104x3.png'} alt="" />
-                        </div>
+                    <button onClick={() => setServiceData(makeupData[1])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={engagement} alt="" />
+                        
 
                         <div className='mt-2 text-center'>
-                            <h1 className='text-[16px]'>Engagement Makeup</h1>
+                            <h1 className='md:text-[16px] text-[10px]'>Engagement</h1>
                         </div>
                     </button>
 
-                    <button onClick={() => setServiceData(['NON-BRIDAL MAKEUP', img3])} className=''>
-                        <div className='mx-auto w-[6rem] h-[6rem] rounded-[50%] overflow-hidden'>
-                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={'https://i.pinimg.com/736x/fb/77/a6/fb77a670ed75d8f5a115e641f1cb07f3.jpg'} alt="" />
-                        </div>
+                    <button onClick={() => setServiceData(makeupData[2])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={nonBridal} alt="" />
+                        
 
                         <div className='mt-2 text-center'>
-                            <h1 className='text-[16px]'>NON-BRIDAL Makeup</h1>
+                            <h1 className='md:text-[16px] text-[10px]'>Non-Bridal</h1>
+                        </div>
+                    </button>
+
+                    <button onClick={() => setServiceData(makeupData[3])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={fashion} alt="" />
+                        
+
+                        <div className='mt-2 text-center'>
+                            <h1 className='md:text-[16px] text-[10px]'>Fashion</h1>
+                        </div>
+                    </button>
+
+                    <button onClick={() => setServiceData(makeupData[4])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={editorial} alt="" />
+                        
+
+                        <div className='mt-2 text-center'>
+                            <h1 className='md:text-[16px] text-[10px]'>Editorial</h1>
+                        </div>
+                    </button>
+
+                    <button onClick={() => setServiceData(makeupData[5])}  className='mx-auto md:w-[6rem] w-[2.5rem] md:h-[6rem] rounded-[50%] '>
+                            <img className='h-full w-full object-cover hover:scale-110 duration-300   mx-auto' src={party} alt="" />
+                        
+
+                        <div className='mt-2 text-center'>
+                            <h1 className='md:text-[16px] text-[10px]'>Party</h1>
                         </div>
                     </button>
 
@@ -68,8 +90,9 @@ const ServicesSection = () => {
 
                 </div>
 
-                <div>
+                <div className='text-center' >
                     <ServiceCard serviceData={serviceData} />
+
                 </div>
 
             </div>
@@ -81,38 +104,47 @@ const ServicesSection = () => {
 const ServiceCard = ({ serviceData }) => {
 
     return (
-        <div>
-            <div className='flex items-center justify-between'>
-                <div className='w-96 h-[2px] bg-[#1A1A38]' ></div>
-                <p>{serviceData[0]}</p>
-                <div className='w-96 h-[2px] bg-[#1A1A38]' ></div>
+        <div className='my-10' >
+            <div className='flex items-center justify-between mt-20 mb-10 '>
+                <div className='md:w-96 w-20 h-[2px] bg-[#1A1A38]' ></div>
+                <p className='uppercase' >{serviceData.title}</p>
+                <div className='md:w-96 w-20 h-[2px] bg-[#1A1A38]' ></div>
             </div>
-            <div className='grid md:grid-cols-2 grid-cols-1 gap-10 my-10 px-10'>
-                <div>
-                    <img className='object-cover' src={serviceData[1]} alt="" />
+
+            <div className='grid md:grid-cols-2 grid-cols-1 gap-2 md:h-[40rem] overflow-hidden p-5' >
+
+                <div className='md:max-h-[40rem]' >
+                    <img className='h-full w-full object-cover' src={serviceData?.images[0]} alt="" />
                 </div>
-                <div className=' space-y-5'>
-                    <h1 className='text-xl font-bold uppercase'>{serviceData[0]}</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation.
-                    </p>
-                    <ul className='space-y-3 pt-2'>
-                        {
-                            [...Array(4)].map((v, i) => {
-                                // console.log(i);
-                                return (
-                                    <li key={i} className='flex gap-5'>
-                                        <img className='object-contain' src={flower2} alt="" /> Lightens acne scars and spots caused by Sun Damage
-                                    </li>
-                                )
-                            })
-                        }
-                    </ul>
-                    <button className='border border-[#d8a62a] text-[#d8a62a] hover:bg-[#d8a62a] hover:text-white px-14 py-3 uppercase' >
-                        Learn More
-                    </button>
+
+                <div className='grid grid-cols-2 gap-2'>
+                    <div className='md:h-[20rem]' >
+                        <img className='h-full w-full object-cover' src={serviceData?.images[1]} alt="" />
+                    </div>
+                    <div className='md:h-[20rem]' >
+                        <img className='h-full w-full object-cover' src={serviceData?.images[2]} alt="" />
+                    </div>
+                    <div className='md:h-[20rem]' >
+                        <img className='h-full w-full object-cover' src={serviceData?.images[3]} alt="" />
+                    </div>
+                    <div className='md:h-[20rem]' >
+                        <img className='h-full w-full object-cover' src={serviceData?.images[4]} alt="" />
+                    </div>
                 </div>
+
             </div>
+
+            <Link to={{
+                pathname:'/gallery',
+                state:{
+                    data:'serviceData.title'
+                }
+            }} >
+                <button className='border border-[#d8a62a] text-[#d8a62a] hover:bg-[#d8a62a] hover:text-white md:px-8 px-4 md:py-3 py-1 uppercase md:mt-10 font-sans font-semibold' >
+                    View All
+                </button>
+            </Link>
+
         </div>
     )
 }

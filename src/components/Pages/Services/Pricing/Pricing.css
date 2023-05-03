@@ -2,10 +2,10 @@
     border-color: #d8a62a;
 }
 
-.main-box:hover> label{
+/* .main-box:hover> label{
     background-color: #6e4f00;
-    /* color: black; */
-}
+    color: black;
+} */
 
 .main-box > button:hover{
     background-color: #af7e03 !important;

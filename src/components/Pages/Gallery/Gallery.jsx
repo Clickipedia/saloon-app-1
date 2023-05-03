@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import flower from '../../../assets/all-images/Flower-icon.png';
+import { useLocation } from 'react-router-dom';
 
 
 const Gallery = () => {
@@ -14,7 +15,13 @@ const Gallery = () => {
         'https://img.freepik.com/free-photo/hairdresser-barber-shop-styling-hair-client_1303-20981.jpg?w=1060&t=st=1682426400~exp=1682427000~hmac=cff60652e651825e0b4fe62af2493f5bd68cdc6daaa07813d9a0560130e00f4c',
         'https://img.freepik.com/free-photo/two-hairstylers-posing-standing-modern-spacy-beaty-salon_651396-986.jpg?w=1060&t=st=1682426414~exp=1682427014~hmac=31aa17297a5ed5d2b41272404a122027afb620d95c3a1e3dba28d1f85a654943',
         'https://img.freepik.com/free-photo/old-fashioned-professional-tattooed-hairdresser-does-haircut-african-american-client-using-trimmer-comb-isolated-dark-textured-background_613910-6437.jpg?w=1060&t=st=1682426442~exp=1682427042~hmac=7bf4b9e831ffaeee0198790d05d5c87868633bf98681c995fda4e2571d60b7ac'
-    ]
+    ];
+
+    const location = useLocation();
+    
+    useEffect(()=>{
+        console.log(location);
+    },[])
 
     return (
         <div className='py-20'>

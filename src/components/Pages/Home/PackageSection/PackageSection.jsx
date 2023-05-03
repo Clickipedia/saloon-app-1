@@ -6,7 +6,7 @@ import flower from '../../../../assets/all-images/Flower-icon.png';
 
 const PackageSection = () => {
     return (
-        <div className='my-20' id='price'>
+        <div className='py-20 bg-[#0A0A23] text-white' id='price'>
             <div className='md:w-[50%] p-2 space-y-2 text-[#848493] text-center mx-auto'>
                 <p className='text-lg'>Choose Our Makeup Offer</p>
                 <h2 className='text-3xl uppercase'><span className='font-semibold text-[#ceced1]'>SPECIAL PRICE</span> PACKAGE</h2>
