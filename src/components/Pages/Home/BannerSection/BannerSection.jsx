@@ -54,7 +54,7 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid bg-cover md:bg-center bg-right grid-cols-2 w-full md:h-[85vh] h-[35vh] items-center md:px-[4rem] bg-transparent text-white md:gap-10'
+            className='grid bg-cover md:bg-center bg-right grid-cols-2 w-full 2xl:h-[50rem] lg:h-[35rem] h-[35vh] items-center md:px-[4rem] bg-transparent text-white md:gap-10'
             style={{
                 backgroundImage: `url(${imageBanner})`
             }}
