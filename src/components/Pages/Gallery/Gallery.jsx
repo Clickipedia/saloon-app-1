@@ -6,6 +6,9 @@ import { useLocation } from 'react-router-dom';
 
 const Gallery = () => {
 
+    window.scrollTo(0, 0);
+
+
     const images = [
         'https://img.freepik.com/free-photo/female-hairdresser-using-hairbrush-hair-dryer_329181-1929.jpg?w=1060&t=st=1682421191~exp=1682421791~hmac=ffb69c97d77254783a3eb454c3b7fe03f872541622dcad4a5675227f1fe09c14',
         'https://img.freepik.com/free-photo/young-man-barbershop-trimming-hair_1303-26254.jpg?w=1060&t=st=1682421220~exp=1682421820~hmac=b7e3d0c683d68dc904d51587f97eb0020fb1bf4ed7a2f51a073e4c2773c5e48a',
@@ -36,7 +39,7 @@ const Gallery = () => {
             </div>
 
 
-                <div className='grid grid-cols-4 my-120 w-[70%] mx-auto'>
+                <div className='grid md:grid-cols-4 grid-cols-2 md:w-[70%] md:px-0 px-5 mx-auto'>
                     {
                         images.map((v, i) => {
                             return (

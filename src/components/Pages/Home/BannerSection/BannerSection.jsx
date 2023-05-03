@@ -54,13 +54,13 @@ const BannerCarousel = () => {
 
     return (
         <div
-            className='grid bg-cover md:bg-center bg-right grid-cols-2 w-full md:h-[92vh] h-[35vh] items-center md:px-[4rem] bg-transparent text-white gap-10'
+            className='grid bg-cover md:bg-center bg-right grid-cols-2 w-full md:h-[85vh] h-[35vh] items-center md:px-[4rem] bg-transparent text-white md:gap-10'
             style={{
                 backgroundImage: `url(${imageBanner})`
             }}
         >
 
-            <div className='md:space-y-5 space-y-2 md:px-0 px-2.5'>
+            <div className='md:space-y-5 space-y-2 md:px-5 px-2'>
 
                 <h3 className='2xl:text-3xl lg:text-2xl font-light text-[#D19F68]'>MORE THEN 200 CUSTOMERS </h3>
                 <h2 className='2xl:text-[4.5rem] lg:text-[3.2rem] font-semibold' >TOP MAKEUP ARTIST</h2>

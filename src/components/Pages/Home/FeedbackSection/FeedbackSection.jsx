@@ -34,7 +34,7 @@ const FeedbackSection = () => {
 
 
     return (
-        <div>
+        <div className='bg-[#0A0A23]' >
             <div className='my-10 mb-16'>
                 <Feedback />
             </div>
@@ -65,10 +65,10 @@ const FeedbackSection = () => {
             </div>
 
             <div className='flex justify-center bg-[#d8a62a] py-4 gap-3 text-2xl'>
-                <button>
-                    <BsInstagram />
-                </button>
+                <button className='flex items-center gap-3' >
+                    <BsInstagram className='mt-1' />
                 <p>@MinaBeauty</p>
+                </button>
             </div>
         </div>
     );

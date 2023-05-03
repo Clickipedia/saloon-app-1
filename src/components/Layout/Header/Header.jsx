@@ -50,22 +50,22 @@ const Header = () => {
                         </label>
                         <ul tabIndex={0} className="dropdown-content border py-1 bg-white uppercase text-center">
                             <li>
-                                <NavLink className='px-14 py-1  border-b-2 border-white hover:border-[#d8a62a] ' >Bridal</NavLink>
+                                <NavLink to='' className='px-14 py-1    hover:text-[#d8a62a] ' >Bridal</NavLink>
                             </li>
                             <li>
-                                <NavLink className='px-7 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Engagement</NavLink>
+                                <NavLink to='' className='px-7 py-[5px]   hover:text-[#d8a62a] ' >Engagement</NavLink>
                             </li>
                             <li>
-                                <NavLink className='px-8 py-[5px] border-b-2 border-white hover:border-[#d8a62a]' >Non-Bridal</NavLink>
+                                <NavLink to='' className='px-8 py-[5px]   hover:text-[#d8a62a]' >Non-Bridal</NavLink>
                             </li>
                             <li>
-                                <NavLink className='px-14 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Fashion</NavLink>
+                                <NavLink to='' className='px-14 py-[5px]   hover:text-[#d8a62a] ' >Fashion</NavLink>
                             </li>
                             <li>
-                                <NavLink className='px-12 py-[5px] border-b-2 border-white hover:border-[#d8a62a] ' >Editorial</NavLink>
+                                <NavLink to='' className='px-12 py-[5px]   hover:text-[#d8a62a] ' >Editorial</NavLink>
                             </li>
                             <li>
-                                <NavLink className='px-16 py-[5px] border-b-2 border-white hover:border-[#d8a62a] w-full' >Party</NavLink>
+                                <NavLink to='' className='px-16 py-[5px]   hover:text-[#d8a62a] w-full' >Party</NavLink>
                             </li>
                         </ul>
                     </div>

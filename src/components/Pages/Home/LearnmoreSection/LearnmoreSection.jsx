@@ -4,7 +4,7 @@ import image from '../../../../assets/all-images/learn-more-image.svg'
 
 const LearnmoreSection = () => {
     return (
-        <div className='text-white bg-[#0a0a23] 2xl:h-[65vh] lg:h-[70vh] 2xl:px-40 lg:px-10  relative'>
+        <div className='text-white bg-[#0a0a23]  lg:h-[38rem] md:py-0 py-10 2xl:px-40 lg:px-10  relative'>
 
             <div className='md:relative md:py-0 py-5'>
                 <div className='-top-[53px] md:absolute ms-10'>
@@ -14,7 +14,7 @@ const LearnmoreSection = () => {
                 <div className='md:w-1/2 ms-auto pt-20 px-5'>
                     <h3 className='2xl:text-3xl lg:text-2xl md:font-light font-extralight '>BEST BRIDAL MAKEUP ARTIST IN KOLKATA </h3>
                     <h2 className='2xl:text-[4.5rem] text-[3.2rem] font-semibold text-[#D19F68]' >PALLAVI JOSHI</h2>
-                    <p className='2xl:text-xl lg:text-lg font-extralight tracking-[.05rem] leading-10 pb-5'
+                    <p className='2xl:text-xl lg:text-lg font-extralight tracking-[.05rem] md:leading-10 pb-5'
                         style={{
                             fontFamily: "'Open Sans', sans-serif"
                         }}

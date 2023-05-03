@@ -13,7 +13,7 @@ const Pricing = () => {
 
 
     return (
-        <div className='2xl:w-[65%] lg:w-[85%] mx-auto grid md:grid-cols-4 grid-cols-1 p-2 gap-8'>
+        <div className='2xl:w-[65%] lg:w-[85%] mx-auto grid md:grid-cols-4 grid-cols-1 p-2 md:gap-8 gap-12 md:px-0 px-10'>
 
             {
                 data.map(price => <PriceCard key={price.id} price={price} />)
@@ -37,7 +37,7 @@ const PriceCard = ({ price }) => {
         >
             <div className='space-y-3 relative'>
 
-                {price.popular ? <span className='text-[16px] bg-[#EC687C] py-1 px-8 absolute -top-16 md:left-4 left-[20%] rounded-[20px]'
+                {price.popular ? <span className='text-[16px] bg-[#EC687C] py-1 px-8 absolute -top-16 md:left-4 sm:left-[15%] left-[12%] rounded-[20px]'
                 > Most Popular </span> :
                     ''
                 }

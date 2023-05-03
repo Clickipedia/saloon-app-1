@@ -10,10 +10,17 @@ import SubscribeSection from "./SubscribeSection/SubscribeSection";
 
 import './Home.css'
 import ServicesSection from "./ServicesSection/ServicesSection";
+import Loading from "../../Layout/Loading/Loading";
 
 const Home = () => {
 
-    window.scrollTo(0, 0)
+    window.scrollTo(0, 0);
+
+    // return(
+    //     <div className="w-full h-screen grid place-content-center">
+    //         <Loading/>
+    //     </div>
+    // )
 
     return (
         <div>
