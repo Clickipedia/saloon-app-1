@@ -1,0 +1,398 @@
+[
+    {
+        "id": 1,
+        "name": "Gennaro Contaldo",
+        "image": "https://example.com/gennaro.jpg",
+        "experience": 50,
+        "numOfRecipes": 1000,
+        "likes": 20000,
+        "description": "Gennaro Contaldo is an Italian chef and restaurateur who is best known for his association with fellow chef Jamie Oliver.",
+        "recipes": [
+            {
+                "name": "Spaghetti Carbonara",
+                "ingredients": [
+                    "spaghetti",
+                    "pancetta",
+                    "pecorino cheese",
+                    "eggs"
+                ],
+                "instructions": [
+                    "Cook spaghetti al dente",
+                    "Cook pancetta until crisp",
+                    "Whisk eggs and pecorino cheese",
+                    "Toss spaghetti with pancetta and egg mixture"
+                ]
+            },
+            {
+                "name": "Tiramisu",
+                "ingredients": [
+                    "ladyfingers",
+                    "espresso",
+                    "Marsala wine",
+                    "mascarpone cheese",
+                    "cocoa powder"
+                ],
+                "instructions": [
+                    "Dip ladyfingers in espresso and Marsala wine",
+                    "Layer ladyfingers and mascarpone cheese",
+                    "Dust with cocoa powder"
+                ]
+            },
+            {
+                "name": "Risotto alla Milanese",
+                "ingredients": [
+                    "Arborio rice",
+                    "onion",
+                    "Parmigiano Reggiano cheese",
+                    "saffron"
+                ],
+                "instructions": [
+                    "Saute onion in a pan",
+                    "Add Arborio rice and toast",
+                    "Add saffron and simmer with broth until cooked",
+                    "Stir in Parmigiano Reggiano cheese"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Giada De Laurentiis",
+        "image": "https://example.com/giada.jpg",
+        "experience": 20,
+        "numOfRecipes": 500,
+        "likes": 12000,
+        "description": "Giada De Laurentiis is an Italian-American chef, writer, and television personality who specializes in Italian cuisine.",
+        "recipes": [
+            {
+                "name": "Spaghetti alle Vongole",
+                "ingredients": [
+                    "spaghetti",
+                    "clams",
+                    "garlic",
+                    "white wine",
+                    "chili flakes"
+                ],
+                "instructions": [
+                    "Cook spaghetti al dente",
+                    "Saute garlic and chili flakes in a pan",
+                    "Add clams and white wine",
+                    "Toss with spaghetti"
+                ]
+            },
+            {
+                "name": "Caprese Salad",
+                "ingredients": [
+                    "tomatoes",
+                    "fresh mozzarella cheese",
+                    "basil",
+                    "extra-virgin olive oil",
+                    "balsamic vinegar"
+                ],
+                "instructions": [
+                    "Slice tomatoes and fresh mozzarella cheese",
+                    "Layer them on a plate with basil leaves",
+                    "Drizzle with extra-virgin olive oil and balsamic vinegar"
+                ]
+            },
+            {
+                "name": "Pesto",
+                "ingredients": [
+                    "basil",
+                    "pine nuts",
+                    "garlic",
+                    "Parmigiano Reggiano cheese",
+                    "extra-virgin olive oil"
+                ],
+                "instructions": [
+                    "Blend basil, pine nuts, garlic, and Parmigiano Reggiano cheese in a food processor",
+                    "Slowly add extra-virgin olive oil while blending until smooth"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Mario Batali",
+        "image": "https://example.com/mario.jpg",
+        "experience": 25,
+        "numOfRecipes": 600,
+        "likes": 14000,
+        "description": "Mario Batali is an Italian-American chef, writer, restaurateur, and media personality who is known for his cooking expertise in Italian cuisine.",
+        "recipes": [
+            {
+                "name": "Bucatini all'Amatriciana",
+                "ingredients": [
+                    "bucatini pasta",
+                    "guanciale",
+                    "San Marzano tomatoes",
+                    "Pecorino Romano cheese",
+                    "chili flakes"
+                ],
+                "instructions": [
+                    "Cook bucatini pasta al dente",
+                    "Saute guanciale in a pan",
+                    "Add San Marzano tomatoes and chili flakes",
+                    "Toss with bucatini pasta and Pecorino Romano cheese"
+                ],
+                "description": "A classic Roman dish made with a spicy tomato sauce and cured pork."
+            },
+            {
+                "name": "Osso Buco",
+                "ingredients": [
+                    "veal shanks",
+                    "onion",
+                    "carrot",
+                    "celery",
+                    "tomato paste",
+                    "white wine",
+                    "beef broth",
+                    "garlic"
+                ],
+                "instructions": [
+                    "Season veal shanks with salt and pepper",
+                    "Brown shanks in a pan",
+                    "Saute onion, carrot, and celery",
+                    "Add tomato paste and garlic",
+                    "Add white wine and beef broth",
+                    "Simmer until meat is tender"
+                ],
+                "description": "A traditional Milanese dish made with slow-braised veal shanks."
+            },
+            {
+                "name": "Torta Caprese",
+                "ingredients": [
+                    "almond flour",
+                    "sugar",
+                    "butter",
+                    "eggs",
+                    "dark chocolate",
+                    "amaretto liqueur"
+                ],
+                "instructions": [
+                    "Mix almond flour, sugar, and melted butter",
+                    "Add beaten eggs and melted chocolate",
+                    "Add amaretto liqueur",
+                    "Bake in oven until set"
+                ],
+                "description": "A flourless chocolate cake that originated on the island of Capri."
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Lidia Bastianich",
+        "image": "https://example.com/lidia.jpg",
+        "experience": 50,
+        "numOfRecipes": 800,
+        "likes": 20000,
+        "description": "Lidia Bastianich is an Italian-American celebrity chef, restaurateur, author, and television host. She specializes in Italian cuisine and has written several cookbooks and hosted multiple cooking shows.",
+        "recipes": [
+            {
+                "name": "Pappardelle with Rabbit Ragù",
+                "ingredients": [
+                    "rabbit meat",
+                    "pappardelle pasta",
+                    "San Marzano tomatoes",
+                    "onion",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "white wine",
+                    "chicken broth",
+                    "olive oil"
+                ],
+                "instructions": [
+                    "Brown rabbit meat in a pan",
+                    "Saute onion, carrot, celery, and garlic",
+                    "Add San Marzano tomatoes and white wine",
+                    "Add chicken broth and simmer until rabbit meat is tender",
+                    "Serve over cooked pappardelle pasta"
+                ],
+                "description": "A hearty and flavorful pasta dish made with tender braised rabbit meat."
+            },
+            {
+                "name": "Tiramisu",
+                "ingredients": [
+                    "ladyfingers",
+                    "mascarpone cheese",
+                    "espresso",
+                    "cocoa powder",
+                    "sugar",
+                    "egg yolks"
+                ],
+                "instructions": [
+                    "Combine mascarpone cheese, sugar, and egg yolks",
+                    "Dip ladyfingers in espresso",
+                    "Layer ladyfingers and mascarpone mixture in a dish",
+                    "Refrigerate for several hours",
+                    "Dust with cocoa powder before serving"
+                ],
+                "description": "A classic Italian dessert made with layers of coffee-soaked ladyfingers and creamy mascarpone cheese."
+            },
+            {
+                "name": "Minestrone Soup",
+                "ingredients": [
+                    "onion",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "cannellini beans",
+                    "tomatoes",
+                    "zucchini",
+                    "potatoes",
+                    "green beans",
+                    "pasta",
+                    "vegetable broth",
+                    "olive oil",
+                    "parmesan cheese"
+                ],
+                "instructions": [
+                    "Saute onion, carrot, celery, and garlic in olive oil",
+                    "Add cannellini beans, chopped tomatoes, and vegetable broth",
+                    "Add diced zucchini, potatoes, and green beans",
+                    "Simmer until vegetables are tender",
+                    "Add cooked pasta and parmesan cheese before serving"
+                ],
+                "description": "A hearty and nutritious vegetable soup that is perfect for cooler weather."
+            }
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Massimo Bottura",
+        "image": "https://example.com/massimo.jpg",
+        "experience": 30,
+        "numOfRecipes": 500,
+        "likes": 25000,
+        "description": "Massimo Bottura is an Italian chef and restaurateur. He is the owner and chef of Osteria Francescana, a three-Michelin-star restaurant in Modena, Italy. He is known for his innovative and avant-garde approach to Italian cuisine.",
+        "recipes": [
+            {
+                "name": "Tagliatelle al Ragu di Carne",
+                "ingredients": [
+                    "tagliatelle pasta",
+                    "beef chuck roast",
+                    "pancetta",
+                    "San Marzano tomatoes",
+                    "onion",
+                    "carrot",
+                    "celery",
+                    "garlic",
+                    "red wine",
+                    "beef broth",
+                    "olive oil",
+                    "parmesan cheese"
+                ],
+                "instructions": [
+                    "Saute onion, carrot, celery, and garlic in olive oil",
+                    "Add cannellini beans, chopped tomatoes, and vegetable broth",
+                    "Add diced zucchini, potatoes, and green beans",
+                    "Simmer until vegetables are tender",
+                    "Add cooked pasta and parmesan cheese before serving"
+                ]
+            },
+            {
+                "name": "Tiramisu",
+                "ingredients": [
+                    "ladyfingers",
+                    "espresso",
+                    "Marsala wine",
+                    "mascarpone cheese",
+                    "cocoa powder"
+                ],
+                "instructions": [
+                    "Dip ladyfingers in espresso and Marsala wine",
+                    "Layer ladyfingers and mascarpone cheese",
+                    "Dust with cocoa powder"
+                ]
+            },
+            {
+                "name": "Risotto alla Milanese",
+                "ingredients": [
+                    "Arborio rice",
+                    "onion",
+                    "Parmigiano Reggiano cheese",
+                    "saffron"
+                ],
+                "instructions": [
+                    "Saute onion in a pan",
+                    "Add Arborio rice and toast",
+                    "Add saffron and simmer with broth until cooked",
+                    "Stir in Parmigiano Reggiano cheese"
+                ]
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Giada De Laurentiis",
+        "image": "https://example.com/giada.jpg",
+        "experience": 25,
+        "numOfRecipes": 300,
+        "likes": 15000,
+        "description": "Giada De Laurentiis is an Italian-American celebrity chef, television personality, and author. She is known for her Italian-inspired recipes and has written several cookbooks and hosted multiple cooking shows.",
+        "recipes": [
+            {
+                "name": "Spaghetti Carbonara",
+                "ingredients": [
+                    "spaghetti pasta",
+                    "pancetta",
+                    "eggs",
+                    "parmesan cheese",
+                    "garlic",
+                    "olive oil",
+                    "black pepper"
+                ],
+                "instructions": [
+                    "Cook spaghetti pasta until al dente",
+                    "Saute pancetta and garlic in olive oil",
+                    "Whisk eggs, parmesan cheese, and black pepper together",
+                    "Add cooked spaghetti to pancetta and garlic",
+                    "Remove from heat and stir in egg mixture"
+                ],
+                "description": "A classic Italian pasta dish made with a creamy sauce of eggs, parmesan cheese, and pancetta."
+            },
+            {
+                "name": "Bistecca alla Fiorentina",
+                "ingredients": [
+                    "T-bone steak",
+                    "olive oil",
+                    "rosemary",
+                    "thyme",
+                    "garlic",
+                    "lemon",
+                    "salt",
+                    "black pepper"
+                ],
+                "instructions": [
+                    "Season T-bone steak with olive oil, rosemary, thyme, and garlic",
+                    "Grill steak to desired doneness",
+                    "Squeeze lemon juice over the top",
+                    "Sprinkle with salt and black pepper before serving"
+                ],
+                "description": "A classic Tuscan steak dish made with a thick, juicy T-bone steak that is seasoned with herbs and grilled to perfection."
+            },
+            {
+                "name": "Torta Caprese",
+                "ingredients": [
+                    "almond flour",
+                    "dark chocolate",
+                    "butter",
+                    "sugar",
+                    "eggs",
+                    "vanilla extract",
+                    "baking powder",
+                    "salt"
+                ],
+                "instructions": [
+                    "Melt dark chocolate and butter in a double boiler",
+                    "Whisk eggs and sugar together",
+                    "Add almond flour, vanilla extract, baking powder, and salt to egg mixture",
+                    "Fold in melted chocolate and butter",
+                    "Bake in a greased cake pan at 350°F for 30-35 minutes"
+                ],
+                "description": "A traditional Italian chocolate and almond flour cake that is moist and rich in flavor."
+            }
+        ]
+    }
+]
